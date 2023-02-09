@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bdy{
+            background-image: url("img7.png");
+            background-repeat: none;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        p{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        marquee{
+            color:aqua;
+            scroll-behavior: smooth;
+        }
+        marquee a{
+            color:brown;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .link{
+            position:fixed;
+            margin-top: 20px;
+            margin-left: 200px;
+            margin-right:20px;
+            border:2px solid whitesmoke;
+        }
+        a:link{
+            background-color: blueviolet;
+            color: green;
+        }
+        a:visited{
+            background-color: aliceblue;
+            color:purple
+        }
+        a:hover{
+            background-color: antiquewhite;
+            color: blue;
+        }
+        a:active{
+            background-color:aliceblue;
+            color:yellow
+        }
+    </style>
+
+</head>
+<body id="bdy" >
+    <p style="color: rgb(243, 249, 250);">
+    This is an example for bg image
+        Empty characters, blank characters, invisible characters and whitespace characters. 
+        They look like a space, but are in fact a different (unicode) character.
+         They can be used if you want to represent an empty space without using space. 
+         Let's say you want to use an empty value in a website or application, but spaces are not accepted. For this situation you can use one of the characters on this site. For example, sending an empty message, or setting a form value to blank. If the application filters out other unicode characters then the characters on this site might not wor
+    </p>
+    <div class="link"><marquee>This is empty page <a href="third.html">Click here to navigate</a></marquee></div>
+    
+</body>
+</html>

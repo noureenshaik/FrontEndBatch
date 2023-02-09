@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+    <p id="i4"></p>
+    <script>
+        function f1(a,b)
+        {
+            return a+b;
+        }
+        function f2(a,b)
+        {
+            return a*b;
+        }
+        function f3(a,b)
+        {
+            return a/b;
+        }
+        function f4(a,b)
+        {
+            return a-b;
+        }
+        document.getElementById("i1").innerHTML="Add:"+f1(10,30);
+        document.getElementById("i2").innerHTML="sub:"+f4(30,10);
+        document.getElementById("i3").innerHTML="Multiply:"+f2(10,30);
+        document.getElementById("i4").innerHTML="Divide:"+f3(10,30);
+    </script>
+</body>
+</html>
