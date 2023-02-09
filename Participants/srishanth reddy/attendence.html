@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+
+    <form>
+        <label for="fname">Enter the total number of days:</label>
+        <input type="text" id="fname" placeholder="total days" id="days"><br>
+        <label for="lname">Enter the total number days absent:</label>
+        <input type="text" id="lname" placeholder="absent days" id="absent">
+    </form>
+    <button onclick="attendence(r,m)">Try it</button>
+    <p id="den"></p>
+    <script>
+        var r=document.getElementById(parseInt("days"));
+        var m=document.getElementById(parseInt("absent"));
+        function attendence(r,m){
+            a=r;
+            b=m;
+            c=a*100;
+            d=c/b;
+            document.getElementById("den").innerHTML="the attendence percentage is"+d;
+        }
+    </script>
+</body>
+</html>
