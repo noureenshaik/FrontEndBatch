@@ -1,0 +1,42 @@
+Div uses:	
+	section the page
+	add image
+	use styling
+	divide the page into multiple sections
+	add class and id to uniquely customize the div
+table:	
+	to store the data in table forms
+	uses rows and columns
+	add the header using th col
+	add the data using tr row
+form:
+	label:value (pair)
+	
+html links:
+	a = anchor tag
+	initially: blue/red
+	after pressed: purple
+html-link uses:-
+use of website:
+	to know more about the company
+	to render their web pages nd also thier own
+	easy access to any website instead of app
+	access from amywhere with internet
+color:
+	to show which is active or not active
+	which is visited and not
+	traffic is elevated in the active links
+	differentiate the link with the details	
+	search engine optimizations is increased by avoiding the visit to same website
+opactiy:
+	0.5 to 1.0
+	float right-left
+-------------------------------------------------
+	JAVASCRIPT-Behavior
+
+
+
+
+	
+	
+		
