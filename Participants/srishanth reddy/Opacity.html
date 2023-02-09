@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        marquee{
+            border-top-color:blueviolet;
+            border:hotpink;
+            background-blend-mode: overlay;
+        }p{
+            background-color: bisque;
+            color:rgb(232, 124, 0);
+            font-style:oblique;
+            font-size:larger;
+            text-align:center;
+        }img{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body background="https://miro.medium.com/max/1200/1*xMuIOwjliGUPjkzukeWKfw.jpeg">
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        function oddeven(a){
+            b=a;
+            if(b%2==0){
+                return 1;
+            }else{
+                return 0;
+            }
+           }
+        a=10;
+        b=20;
+        c=a+b;
+        document.getElementById("demo1").innerHTML="the value of c is"+c;
+        function addition(a,b){
+            return a+b;
+        }
+        document.getElementById("demo").innerHTML="the value of function  is"+addition(4,3);
+        document.getElementById("demo2").innerHTML="the value of function  is"+oddeven(4);
+    </script>
+    <marquee direction="right" scrollamount="15"><img src="12.jpg" width="300" height="300"></marquee>
+    <p style="color: blueviolet">Hello mera nam hae sharukhan</p>
+    <p style="color:rgb(119, 119, 37)">the image is great</p>
+    <form>
+        <label for="fname">FIRSTNAME:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">LASTNAME:</label>
+        <input type="text" id="lname" name="lname"
+    </form>
+</body>
+</html>
