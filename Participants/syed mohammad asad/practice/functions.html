@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hey there!!</p>
+    <h1 id="demo"></h1>
+    <h2 id="demo1"></h2>
+    <h3 id="demo2"></h3>
+    <script>
+        function addition(a,b){
+            return a+b;
+        }
+        document.getElementById("demo").innerHTML="a+b = "+addition(4,7);
+        
+        function subtraction(a,b){
+            return a-b;
+        }                
+        document.getElementById("demo2").innerHTML="a*b = "+multiplication(4,7);
+
+        function multiplication(a,b){
+            return a*b;
+        }
+        document.getElementById("demo1").innerHTML="a-b = "+subtraction(4,7);
+                
+    </script>
+</body>
+</html>
