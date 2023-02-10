@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo"> we are learning the subject </p>
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+    <script>
+        function addition (x,y){
+            return x+y;
+        }
+        // a = 10;
+        // b = 20;
+        // c = a+b;
+        
+        document.getElementById("demo").innerHTML="the value of c " + addition(4,3);
+        
+        // console.writeLine(addition(4,3));
+    </script>
+    <script>
+        function subtraction(a,b){
+            return a-b;
+        }
+        document.getElementById("demo1").innerHTML=subtraction(6,4);
+    </script>
+    <script>
+        function mul(a,b){
+            return a*b;
+        }
+        document.getElementById("demo2").innerHTML= mul(a,b);
+    </script>
+    <script>
+        function div(a,b){
+            return a/b;
+        }
+        document.getElementById("demo3").innerHTML= div(a,b);                   
+    </script>
+</body>
+</html>
