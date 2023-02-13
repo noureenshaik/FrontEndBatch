@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    #main .btn{
+      width:150px; 
+      height:32px; 
+      outline:none;  
+      color:#f7f7f7; 
+      font-weight:bold; 
+      border:0px solid #d8661b; 
+      text-shadow: 0px 0.5px 0.5px #fff; 
+      border-radius: 2px; font-weight: 600; 
+      color: #d8661b; letter-spacing: 1px; 
+      font-size:14px; background-color:#f1f1f1; 
+      -webkit-transition: 1s; 
+      -moz-transition: 1s; 
+      transition: 1s;}
+  
+    #main .btn:hover{
+      background-color:#d8661b; 
+      outline:none;  
+      border-radius: 2px; 
+      color:#f1f1f1; 
+      border:1px solid #f1f1f1;
+      -webkit-transition: 1s; 
+      -moz-transition: 1s; 
+      transition: 1s; }
+      #div1 {
+  width: 200px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #852525;
+  color:aliceblue;
+}
+  </style>
+  
+  <script>
+    function registration()
+      {
+
+            var name= document.getElementById("t1").value;
+            var email= document.getElementById("t2").value;
+            var phone= document.getElementById("t3").value;
+            var ct= document.getElementById("t4").value;			
+            
+            //test cases
+            var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+            var letters = /^[A-Za-z]+$/;
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var phoneno = /^\d{10}$/;
+
+            if(name=='')
+            {
+              alert('Please enter your name');
+            }
+            else if(!letters.test(name))
+            {
+              alert('Name field required only alphabet characters');
+            }
+            else if(email=='')
+            {
+              alert('Please enter your user email id');
+            }
+            else if (!filter.test(email))
+            {
+              alert('Invalid email');
+            }
+            else if(phone=='')
+            {
+              alert('Please enter the phone number');
+            }
+            else if (!phoneno.test(phone))
+            {
+              alert('Please enter correct phone number');
+            }
+            else if(ct=='')
+            {
+              alert('Please enter City name');
+            }
+            else if(!letters.test(ct))
+            {
+              alert('Name field required only alphabet characters');
+            }
+            else
+            {				                            
+                alert('Thank You for Login.Have good food and a good day!!');
+            }
+                
+      }
+      function clearFunc()
+      {
+        document.getElementById("t1").value="";
+        document.getElementById("t2").value="";
+        document.getElementById("t3").value="";
+        document.getElementById("t4").value="";
+      }
+
+  </script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rushmitha Disys</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">Wait a minute for delicious!</a></h1>
+       
+      
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a href="geo.html">Geolocation</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a>
+
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(va.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Rushmitha's</span> Restaurant</h2>
+                <p class="animate__animated animate__fadeInUp"><strong>GOOD FOOD! GOOD LIFE! <3</strong> </p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+          <center><p><h3>This is a website made for ordering delicious food.Have a good meal!</h3></p></center>
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Book a <span>Table</span></h2>
+          <p>Please enter your details for booking</p>
+        </div>
+        <div class="container">
+          <div id="main">
+            <div class="h-tag">
+            <center><h2>Enter your details</h2></center>
+            </div>
+            <!-- create account div -->
+            <div class="login">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+            <tr>
+            <td align="right">Enter Name :</td>
+            <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+            </tr>
+            <tr>
+            <td align="right">Enter Email ID :</td>
+            <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+            </tr>
+            <tr>
+            <td align="right">Enter Phone number :</td>
+            <td><input type="number" placeholder="Enter Phone No. here" id="t3" class="tb" /></td>
+            </tr>
+            <tr>
+            <td align="right">Enter City</td>
+            <td><input type="text" placeholder="Enter city here" id="t4" class="tb" /></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td>
+            <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+            <input type="submit" value="Submit" class="btn" onclick="registration()" /></td>
+            </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Book A Table Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-title">
+          <h2>Check our tasty <span>Menu</span></h2>
+        </div>
+         <div class="row">
+
+          <div class="card-group">
+            <div class="card">
+              <img src="indian.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">INDIAN</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <a href="indbill.html">
+                  <button class="btn btn-primary btn-lg">Click</button>
+               </a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="italian.jpg" class="card-img-top" >
+              <div class="card-body">
+                <h5 class="card-title">ITALIAN</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <a href="italybill.html">
+                  <button class="btn btn-primary btn-lg">Click</button>
+               </a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="chinese.jpg" class="card-img-top" >
+              <div class="card-body">
+                <h5 class="card-title">CHINESE</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <a href="chinabill.html">
+                  <button class="btn btn-primary btn-lg">Click</button>
+               </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Menu Section -->
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+          <p>Geolocation,Mobile number,Email</p>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248812.48443849277!2d79.96657193281253!3d12.99134490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5251b8fb4c23dd%3A0xe76b972c3aa4bb8b!2sDigital%20Intelligence%20Systems%2C%20LLC!5e0!3m2!1sen!2sin!4v1676235342865!5m2!1sen!2sin" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Ground Floor, Modules 3&5, Neville Towers, Ramanujan IT Park<br>Tharamani, Chennai 600113</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>10:00 AM - 10.00 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>rushmithakitchen@gmail.com<br>rushmithares@yahoo.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>9123456780<br>9876543210</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+    <p style="color:rgb(0, 0, 0)">drag and drop  here to avail the DISCOUNT !</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="indian.jpg" draggable="true" ondragstart="drag(event)" width="200" height="70">
+    <div class="row">
+      <div class="col">
+        <marquee scrollamount="10"><img src="indian.jpg" style="width:250px; height:250px;"></marquee>
+        </div>
+        <div class="col">
+          <marquee scrollamount="10"><img src="italian.jpg" style="width:250px; height:250px;"></marquee>
+          </div>
+          <div class="col">
+            <marquee scrollamount="10"><img src="chinese.jpg" style="width:250px; height:250px;"></marquee>
+            </div>
+
+      </div>
+
+    </div>
+  
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Rushmitha's Restaurant</h3>
+      <div class="social-links">
+        <a href=" https://twitter.com/DISYSGlobal" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/DISYS/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/disysind/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.disys.com/" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://in.linkedin.com/company/disys" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>DISYS</span></strong>. All Rights Reserved
+      </div>
+    </div>
+    
+    
+
+<h2>Geolocation</h2>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

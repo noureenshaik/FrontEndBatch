@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Billing Page</title>
+    <style>
+      body{
+        background-repeat: no-repeat;
+        background-size: 100% 260%;
+        
+        
+      }
+      table {
+        width: 50%;
+        margin: auto;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        border: 3px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      h1 {
+        text-align: center;
+      }
+	  #total {
+    	text-align: center;
+        font-size: 150%;
+        background-color: rgb(241, 246, 241);
+        inline-size: 100%;
+        border-block-end-width: 10px;
+     }
+		
+    </style>
+  </head>
+  <body background="bill1.jpg">
+    <h1>Restaurant Billing Page</h1>
+    <table>
+      <tr>
+        <th>Food Item</th>
+        <th>Price</th>
+        <th>No. of Items</th>
+      </tr>
+      <tr>
+        <td><strong>Noodles</strong></td>
+        <td><strong>130 rs</strong></td>
+        <td>
+          <input type="number" id="noodles">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Peking roast duck</strong></td>
+        <td><strong>235 rs</strong></td>
+        <td>
+          <input type="number" id="duck">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Chow Mein Ramen</strong></td>
+        <td><strong>180 rs</strong></td>
+        <td>
+          <input type="number" id="ramen">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Ma po tofu</strong></td>
+        <td><strong>100 rs</strong></td>
+        <td>
+          <input type="number" id="tofu">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Kung pao chicken</strong></td>
+        <td><strong>500rs</strong></td>
+        <td>
+          <input type="number" id="chicken">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Scallion pancakes</strong></td>
+        <td><strong>130 rs</strong></td>
+        <td>
+          <input type="number" id="pancakes">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Wonton soup</strong></td>
+        <td><strong>190 rs</strong></td>
+        <td>
+          <input type="number" id="soup">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>dumplings</strong></td>
+        <td><strong>300 rs</strong></td>
+        <td>
+          <input type="number" id="dumpling">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>char siu</strong></td>
+        <td><strong>260 rs</strong></td>
+        <td>
+          <input type="number" id="siu">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Spring rolls</strong></td>
+        <td><strong>2800 rs</strong></td>
+        <td>
+          <input type="number" id="spring rolls">
+        </td>
+      </tr>
+
+    </table>
+    <br>
+    <center><button onclick="calculateTotal()">Calculate Total</button></center>
+    <p id="total"></p>
+
+    <script>
+      function calculateTotal() {
+        var noodles = document.getElementById("noodles").value;
+        var duck = document.getElementById("duck").value;
+        var ramen = document.getElementById("ramen").value;
+        var total = (noodles * 130 ) + (duck * 235) + (ramen * 180);
+        document.getElementById("total").innerHTML = "Total: " + total + " Rupees /-";
+      }
+    </script>
+  </body>
+</html>

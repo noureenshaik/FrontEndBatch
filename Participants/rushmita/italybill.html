@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Billing Page</title>
+    <style>
+      body{
+        background-repeat: no-repeat;
+        background-size: 100% 260%;
+        
+        
+      }
+      table {
+        width: 50%;
+        margin: auto;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        border: 3px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      h1 {
+        text-align: center;
+      }
+	  #total {
+    	text-align: center;
+        font-size: 150%;
+        background-color: rgb(241, 246, 241);
+        inline-size: 100%;
+        border-block-end-width: 10px;
+     }
+		
+    </style>
+  </head>
+  <body background="bill1.jpg">
+    <h1>Restaurant Billing Page</h1>
+    <table>
+      <tr>
+        <th>Food Item</th>
+        <th>Price</th>
+        <th>No. of Items</th>
+      </tr>
+      <tr>
+        <td><strong>Pizza</strong></td>
+        <td><strong>100 rs</strong></td>
+        <td>
+          <input type="number" id="pizza">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Risotto</strong></td>
+        <td><strong>200 rs</strong></td>
+        <td>
+          <input type="number" id="riso">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Pasta</strong></td>
+        <td><strong>135 rs</strong></td>
+        <td>
+          <input type="number" id="pasta">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Bruschetta</strong></td>
+        <td><strong>300 rs</strong></td>
+        <td>
+          <input type="number" id="Bruschetta">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Lasagne</strong></td>
+        <td><strong>190 rs</strong></td>
+        <td>
+          <input type="number" id="lasagne">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Gnocchi</strong></td>
+        <td><strong>400 rs</strong></td>
+        <td>
+          <input type="number" id="gnocchi">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Ravioli</strong></td>
+        <td><strong>340 rs</strong></td>
+        <td>
+          <input type="number" id="ravioli">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Scallion pancakes</strong></td>
+        <td><strong>130 rs</strong></td>
+        <td>
+          <input type="number" id="pancakes">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Carpaccio</strong></td>
+        <td><strong>470 rs</strong></td>
+        <td>
+          <input type="number" id="carpaccio">
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Gelato & Dolce</strong></td>
+        <td><strong>130 rs</strong></td>
+        <td>
+          <input type="number" id="pancakes">
+        </td>
+      </tr>
+    </table>
+    <br>
+    <center><button onclick="calculateTotal()">Calculate Total</button></center>
+    <p id="total"></p>
+
+    <script>
+      function calculateTotal() {
+        var pizza = document.getElementById("pizza").value;
+        var riso = document.getElementById("riso").value;
+        var pasta = document.getElementById("pasta").value;
+        var total = (pizza * 100 ) + (riso * 200) + (pasta * 135);
+        document.getElementById("total").innerHTML = "Total: " + total + " Rupees /-";
+      }
+    </script>
+  </body>
+</html>
