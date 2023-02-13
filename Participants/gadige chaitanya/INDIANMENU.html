@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order</title>
+    <style>
+    h1{
+        margin-right:400px;
+        margin-left:400px;
+        text-align: center;
+        color: rgb(51, 53, 54);
+    
+    }
+    img.background {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        -webkit-filter: blur(5px); 
+        filter: blur(5px);}
+        .form1{
+            font-style: Times;
+            margin-top: 10px;
+            margin-right:500px;
+            margin-left:500px;
+            border-radius: 5%;
+        
+        }
+        </style>
+  </head>
+ 
+  </head>
+    <body>
+        <img class="background" src="https://wallpaperaccess.com/full/1316984.jpg" alt="Aleq">
+        <h1> Take your Order for Indian foods</h1>
+        <div class="form1">
+        <form>
+            
+          <label for="numBurgers"><h3><b> Meals :</b></h></label>
+          <input type="number" id="numBurgers" name="numBurgers" value="0" min="0">
+          <br><br>
+          <label for="numFries"><b> Chicken biriyani :</b></label>
+          <input type="number" id="numFries" name="numFries" value="0" min="0">
+          <br><br>
+          <label for="numDrinks"><b> Chapaties :</b></label>
+          <input type="number" id="numDrinks" name="numDrinks" value="0" min="0">
+          <br><br>
+          <label for="numBurgers"><b> Indian Thali :</b></label>
+          <input type="number" id="numBurger" name="numBurger" value="0" min="0">
+          <br><br>
+          <label for="numFries"><b> Rasagula fry :</b></label>
+          <input type="number" id="numFrie" name="numFrie" value="0" min="0">
+          <br><br>
+          <label for="numDrinks"><b> Drumstick Fry :</b></label>
+          <input type="number" id="numDrink" name="numDrink" value="0" min="0">
+          <br><br>
+          <button type="button" onclick="calculateBill()">Place Order</button>
+        </form>
+        <p id="output"></p>
+        <br><br>
+    </div>
+        
+        <script src="script.js"></script>
+        <script>
+            function calculateBill() {
+            const numBurgers = parseInt(document.querySelector("#numBurgers").value);
+            const numFries = parseInt(document.querySelector("#numFries").value);
+            const numDrinks = parseInt(document.querySelector("#numDrinks").value);
+            const numBurger = parseInt(document.querySelector("#numBurger").value);
+            const numFrie = parseInt(document.querySelector("#numFrie").value);
+            const numDrink = parseInt(document.querySelector("#numDrink").value);
+            const burgerPrice = 120;
+            const friesPrice = 150;
+            const drinkPrice = 210;
+            const burgerPric = 310;
+            const friesPric = 210;
+            const drinkPric = 100;
+            const total = (numBurgers * burgerPrice) + (numFries * friesPrice) + (numDrinks * drinkPrice)+(numBurger * burgerPric) + (numFrie * friesPric) + (numDrink * drinkPric);
+            document.querySelector("#output").innerHTML = "Your Total oder is:"+" ₹"+total;
+            if(total==0){
+                alert("The colums cannot be empty")
+            }else{
+                alert("Your oder is succesfull")
+            }
+                
+            
+            }
+        </script>
+  </body>
+</html>
