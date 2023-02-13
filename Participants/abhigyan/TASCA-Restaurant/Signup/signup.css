@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --myfont: "Montserrat", sans-serif;
+  --my-btn-font: "Ubuntu", sans-serif;
+  --lg-color: linear-gradient(
+    to left,
+    rgba(86, 171, 47, 1),
+    rgba(168, 224, 99, 1)
+  );
+}
+
+body {
+  background-image: url("");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--myfont);
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+  overflow: hidden;
+  width: calc(100vw - 65vw);
+  max-width: 100%;
+}
+
+.header {
+  background: var(--lg-color);
+  padding: 30px 0;
+}
+
+.header h2 {
+  color: #222;
+  font-family: var(--my-btn-font);
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form {
+  padding: 40px;
+}
+
+.form .btn {
+  display: block;
+  background: var(--lg-color);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: var(--my-btn-font);
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+.form .btn:hover {
+  background: linear-gradient(
+    to right,
+    rgba(86, 171, 47, 1),
+    rgba(168, 224, 99, 1)
+  );
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-control label {
+  display: inherit-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  font-family: var(--myfont);
+  font-size: 14px;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.form-control input:focus {
+  border-color: #777;
+  outline: 0;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  position: absolute;
+  top: 38px;
+  right: 12px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-square {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-triangle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  position: absolute;
+  left: 0;
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+@media (max-width: 998px) {
+  .container {
+    width: calc(90vw - 35vw);
+    max-width: 100%;
+  }
+}
