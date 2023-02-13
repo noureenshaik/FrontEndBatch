@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+  transition: 0.3s;
+}
+body {
+    background-image: url("https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    overflow: scroll;
+    background-position: fixed;
+    display: flex;
+    justify-content: center;
+}
+form {
+    background-color: white;
+    height: fit-content;
+    padding: 50px 80px;
+    margin: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Header */
+
+.body {
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(137, 8, 8);
+  z-index: 200;
+  /* box-shadow: 0px 5px 15px rgba(192, 192, 192, 0.63); */
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #f1e6e8;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#8c0707;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li:last-of-type {
+  margin-right: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(241, 215, 215);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+}
+.active-nav-link {
+  border-bottom: 3px solid #3a63c9;
+  color: #3a63c9;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  max-width: 1920px;
+  margin: auto;
+  background-color: red;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+.contact-form {
+  width: 50%;
+}
+.input {
+  display: flex;
+  align-items: center;
+
+  margin: 20px;
+  margin-left: 0px;
+}
+.input p {
+  font: weight 700;
+  font-size: 18px;
+  color: white;
+  margin-right: 25px;
+  width: 75px;
+}
+
+.input input {
+  width: 250px;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  padding: 3px 5px;
+  font-size: 18px;
+}
+
+.contact-form button {
+  width: 150px;
+  height: 45px;
+  background-color: #543076;
+  border: 3px solid #543076;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  color: #543076;
+  background-color: white;
+}
+.contact-form h1 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer-link {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.footer-link h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+}
+.footer-link h1::after,
+.contact-form h1::after {
+  content: url('./assets/footer-line.svg');
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.footer-links-inner a {
+  color: white;
+  line-height: 30px;
+}
+
+.footer-links-inner a:hover {
+  color: #233c7b;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.social-icons::after {
+  content: url('./assets/social-line.svg');
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+}
+.social-icons a {
+  margin-right: 15px;
+}
+.social-icons a:last-of-type {
+  margin-right: 0px;
+}
+
+.social p {
+  color: white;
+  font-weight: 500;
+}
+.rights {
+  text-align: center;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .footer-link {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .footer-link {
+    flex-direction: column;
+  }
+  .social {
+    margin-top: 2rem;
+  }
+  .contact-form {
+    margin: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 2rem 0.5rem;
+  }
+  .input {
+    justify-content: space-between;
+    margin-right: 0px;
+  }
+  .input p {
+    margin-right: 0px;
+  }
+  .social-icons a {
+    margin-right: 5px;
+  }
+  .social-icons::after {
+    display: none;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #970b0b;
+}
+
+</style>
+<body>
+
+    <header>
+        <nav>
+          <a href="#"><h1 class="logo">TidalFood</h1></a>
+          <ul class="nav-links">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="sin.html" class="link">SignIn</a></li>
+            <li><a href="sup.html" class="link active-nav-link">SignUp</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="video.html" class="link">Know more</a></li>
+            <li><a href="calc.html" class="link">Bill</a></li>
+            <li>
+              <!--<a href="./cart.html"
+                ><img
+                  class="cart"
+                  src="./assets/cart-icon.svg"
+                  alt=" cart"
+                  title="Shopping Cart"
+              /></a>-->
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+    
+    <form onsubmit="return validate();"  action="sin.html">
+        <center><h1>SIGN UP</h1></center>
+    <label for="fname">First Name</label>    
+    <input type="text" name="fname" id="fname" onfocusout="checkNULL(this)"><br><br>
+    <label for="lname">Last Name</label>    
+    <input type="text" name="lname" id="lname" onfocusout="checkNULL(this)"><br><br>
+    Gender<br><br>
+    <input type="radio" name="gender" id="male" value="male">Male
+    <input type="radio" name="gender" id="female" value="female">Female<br><br>
+    <label for="age">Age</label>    
+    <input type="text" name="age" id="age" onfocusout="checkNULL(this)"><br><br>
+    <label for="email">Email</label>    
+    <input type="text" name="email" id="email" onfocusout="checkNULL(this)"><br><br>
+    <label for="contact">Contact</label>    
+    <input type="text" name="contact" id="contact" onfocusout="checkNULL(this)"><br><br>
+    
+    
+    <label for="pwd">Password</label>    
+    <input type="password" name="pwd" id="pwd" onfocusout="checkNULL(this)"><br><br>
+<!--
+    <textarea name="description" onfocusout="checkNULL(this)"></textarea><br><br>
+    <label for="regno">Register Number</label>    
+    <input type="text" name="regno" id="regno" onfocusout="checkNULL(this)"><br><br>
+    
+    
+    <select name="dept">
+        <option value="IT">IT</option>
+        <option value="CS">CS</option>
+        <option value="EC">EC</option>
+    </select><br><br>
+
+    
+    <label for="cpwd">Confirm Password</label>    
+    <input type="password" name="cpwd" id="cpwd" onfocusout="checkNULL(this)"><br><br>
+-->
+    <button type="submit" action="sin.html">Submit</button>
+    </form>
+
+
+    
+    <script>
+        function checkNULL(elem){
+            if(elem.value == ""){
+                elem.style.borderColor = "red";
+            }
+        }
+        function validate(){
+            let fname = document.getElementById("fname");
+            let lname = document.getElementById("lname");
+            let age = document.getElementById("age");
+            let email = document.getElementById("email");
+            let contact = document.getElementById("contact");
+            let regno = document.getElementById("regno");
+            let dept = document.getElementById("dept");
+            let description = document.getElementById("description");
+            let pwd = document.getElementById("pwd");
+            let cpwd = document.getElementById("cpwd");
+            let fname_regexp = /^[A-Za-z]+$/;
+            let lname_regexp = /^[A-Za-z]+$/;
+            let age_regexp = /^[0-9]{2,3}$/;
+            let email_regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            let phone_regexp = /^[0-9]{10}$/;
+            let regno_regexp = /^[0-9]{9}$/;
+            if(!(fname.value.match(fname_regexp))){
+                alert("First Name Not Valid");
+            }
+            else if(!(lname.value.match(lname_regexp))){
+                alert("Last Name Not Valid");
+            }
+            else if(!(document.getElementById("male").checked || document.getElementById("female").checked)){
+                alert("Choose Gender");
+            }
+            else if(!age.value.match(age_regexp)){
+                alert("Age Not Valid");
+            }
+            else if(!email.value.match(email_regexp)){
+                alert("Email Not Valid");
+            }
+            else if(!contact.value.match(phone_regexp)){
+                alert("Phone Number Not Valid");
+            }
+            else if(!regno.value.match(regno_regexp)){
+                alert("Register Number Not Valid");
+            }
+            else if(document.getElementsByName("dept")[0].value == ""){
+                alert("Select Department");
+            }
+            else if(document.getElementsByName("description")[0].value == ""){
+                alert("Enter Description");
+            }
+            else if(document.getElementsByName("pwd")[0].value != document.getElementsByName("cpwd")[0].value){
+                alert("Passwords not matching");
+            }
+            else if(document.getElementsByName("pwd")[0].value.length < 8){
+                alert("Password format Not Valid");
+            }
+            else{
+                return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Login:</h2>
+
+
+<br>
+
+
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+
+Name: 
+<input type="text" name="name"><br/>  
+
+Password: 
+<input type="password" name="password"><br/> 
+
+<p>Age? (must be above 18)</p>
+<input id="id1" type="number" min="18">
+<button onclick="myFunction1()">OK</button>
+<p id="demo1"></p>
+
+<button onclick="getLocation()">Try It</button>
+<p id="demo2"></p>
+
+       <input type="radio" id="java" name="technology" value="java">
+        <label for="java">JAVA</label><br>
+
+        <input type="checkbox" id="cpp" name="technology" value="cpp">
+        <label for="java">C++</label><br>
+
+        <input type="radio" id="python" name="technology" value="python">
+        <label for="java">PYTHON</label><br>
+
+        <input type="checkbox" id="kotlin" name="technology" value="kotlin">
+        <label for="java">KOTLIN</label><br>
+		
+<input type="submit" value="register">  
+</form>  
+
+
+<script>
+function myFunction1() {
+  let text;
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+    text = "Value too small";
+  } else {
+    text = "Input OK";
+  } 
+  document.getElementById("demo1").innerHTML = text;
+}
+</script>
+
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>-->

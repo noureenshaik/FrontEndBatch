@@ -1,0 +1,492 @@
+<html>
+
+<head>
+  <title>Donut Empire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Counter -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <!-- Glider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<style>
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(137, 8, 8);
+  z-index: 200;
+  /* box-shadow: 0px 5px 15px rgba(192, 192, 192, 0.63); */
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #f1e6e8;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#8c0707;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li:last-of-type {
+  margin-right: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(241, 215, 215);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+}
+.active-nav-link {
+  border-bottom: 3px solid #3a63c9;
+  color: #3a63c9;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+
+
+/* Footer */
+footer {
+  max-width: 1920px;
+  margin: auto;
+  background-color: rgb(147, 10, 10);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+.contact-form {
+  width: 50%;
+}
+.input {
+  display: flex;
+  align-items: center;
+
+  margin: 20px;
+  margin-left: 0px;
+}
+.input p {
+  font: weight 700;
+  font-size: 18px;
+  color: white;
+  margin-right: 25px;
+  width: 75px;
+}
+
+.input input {
+  width: 250px;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  padding: 3px 5px;
+  font-size: 18px;
+}
+
+.contact-form button {
+  width: 150px;
+  height: 45px;
+  background-color: #543076;
+  border: 3px solid #543076;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  color: #543076;
+  background-color: white;
+}
+.contact-form h1 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer-link {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.footer-link h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+}
+.footer-link h1::after,
+.contact-form h1::after {
+  content: url('./assets/footer-line.svg');
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.footer-links-inner a {
+  color: white;
+  line-height: 30px;
+}
+
+.footer-links-inner a:hover {
+  color: #233c7b;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.social-icons::after {
+  content: url('./assets/social-line.svg');
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+}
+.social-icons a {
+  margin-right: 15px;
+}
+.social-icons a:last-of-type {
+  margin-right: 0px;
+}
+
+.social p {
+  color: white;
+  font-weight: 500;
+}
+.rights {
+  text-align: center;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .footer-link {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+</style>
+
+
+<body background="con.jpg">
+  <div>
+    
+    <header>
+      <nav>
+        <a href="#"><h1 class="logo">TidalFood</h1></a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="link active-nav-link">Home</a></li>
+          <li><a href="sin.html" class="link">SignIn</a></li>
+          <li><a href="sup.html" class="link">SignUp</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="video.html" class="link">Know more</a></li>
+          <li><a href="calc.html" class="link">Bill</a></li>
+          <li>
+            <!--<a href="./cart.html"
+              ><img
+                class="cart"
+                src="./assets/cart-icon.svg"
+                alt=" cart"
+                title="Shopping Cart"
+            /></a>-->
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+ <br><br><br>
+
+  <div class="container menucontainer">
+
+    <h1 id="demo0"></h1>
+
+    <script>
+    const myPromise = new Promise(function(myResolve, myReject) {
+      setTimeout(function(){ myResolve("Welcome back !!"); }, 3000);
+    });
+    
+    myPromise.then(function(value) {
+      document.getElementById("demo0").innerHTML = value;
+    });
+    </script>
+
+    
+    <center><h1 style="color: rgb(242, 68, 56);float: center;">SPECIAL ITEMS</h1></center>
+    <div class="row text-center">
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Biryani_of_Lahore.jpg">
+            <h5>Biriyani</h5>
+            <p>Our signature glazed donut</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://static.toiimg.com/thumb/83982216.cms?imgsize=873611&width=800&height=800">
+            <h5>Biriyani</h5>
+            <p>Chocolate frosted with rainbow sprinkle</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://img.taste.com.au/O2cA9MRG/taste/2016/11/indian-style-potato-and-pea-smash-108605-1.jpeg">
+            <h5>Biriyani</h5>
+            <p>Strawberry frosted with rainbow sprinkle</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://sukhis.com/app/uploads/2022/06/image3-1024x684.jpg">
+            <h5 class="card-title">Choco Glazed</h5>
+            <p class="card-text">Smooth chocolate icing on our Original Glazed</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://vegan.com/wp-content/uploads/2019/09/indian-food.jpg">
+            <h5 class="card-title">Oreo Filled</h5>
+            <p class="card-text">Filled with Oreo Cookies and Kreme filling</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="http://www.spiceindiaonline.com/wp-content/uploads/Lunch-Dinner-Menu-6-%E2%80%93-South-Indian-Vegetarian-Lunch-Menu-1-copy.jpg">
+            <h5 class="card-title">Cinnamon</h5>
+            <p class="card-text">The cinnamon powdered donut</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://i.pinimg.com/originals/14/61/c3/1461c3a1d553b0d243934b37a858d794.jpg">
+            <h5 class="card-title">Biriyani</h5>
+            <p class="card-text">Vanilla frosted with crunchy choco chips</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menucol col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://www.subbuskitchen.com/wp-content/uploads/2014/07/NorthIndian-Lunch-Menu1_Final2-1024x686.jpg">
+            <h5 class="card-title">Choco Nuts</h5>
+            <p class="card-text">Chocolate frosted with roasted nuts</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="menucol col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://i.pinimg.com/736x/51/c0/aa/51c0aafdfde4dfebb6a647b349635a12.jpg">
+            <h5 class="card-title">Biriyani</h5>
+            <p class="card-text">6 assorted donuts of your choice</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 col-md-4 col-xl-3 ">
+        <div class="card menucard" data-aos="fade-right">
+          <div class="card-body" style="text-align:center">
+            <img src="https://cookwithrenu.com/wp-content/uploads/2020/08/North-Indian-Vegetarian-lunch-Thali_Featured-Image.jpg">
+            <h5 class="card-title">Dozen </h5>
+            <p class="card-text">12 assorted donuts of your choice</p>
+            <button class="price">Rs.98</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+      <footer id="footer">
+        <div class="footer">
+          <div id="contact" class="contact-form" data-aos="fade-in">
+            
+            <h1>Location</h1>
+            
+            <center><button onclick="getLocation()" style="height: 170px;">Click here to check if your location falls within our range!</button></center>
+          <p id="demo"></p>
+
+
+          </div>
+          <div class="footer-link" data-aos="fade-in">
+            <div class="footer-links">
+              <h1>More Info</h1>
+              <div class="footer-links-inner">
+                <a href="#"><p>Policy</p></a>
+                <a href="#"><p>Legal Information</p></a>
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>Products</p></a>
+                <a href="#"><p>Food Safety</p></a>
+                <a href="#"><p>Terms and Conditions</p></a>
+              </div>
+            </div>
+            <div class="social">
+              <div class="social-icons">
+                <a href="#"
+                  ><img src="./assets/facebook.svg" alt="facebook"
+                /></a>
+                <a href="#"><img src="./assets/youtube.svg" alt="youtube" /></a>
+                <a href="#"><img src="./assets/twitter.svg" alt="twitter" /></a>
+                <a href="#"
+                  ><img src="./assets/pintrest.svg" alt="pintrest"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/instagram.svg" alt="instagram"
+                /></a>
+              </div>
+              <p>Follow Us on Socials.</p>
+            </div>
+          </div>
+        </div>
+        <p class="rights">&#169; All rights reserved 2023.</p>
+      </footer>
+ 
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1)
+      }).add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+      }).add({
+        targets: '.ml1',
+        opacity: 0,
+        duration: 1000,
+        delay: 1000
+      });</script>
+
+</script>
+
+<script>
+  const x = document.getElementById("demo");
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  
+  function showPosition(position) {
+    x.innerHTML = "Yes! It does! <br>Latitude is: " + position.coords.latitude + 
+    "<br>Longitude is: " + position.coords.longitude;
+  }
+  </script>
+
+
+</body>
+
+</html>

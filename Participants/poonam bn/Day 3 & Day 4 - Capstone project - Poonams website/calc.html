@@ -1,0 +1,328 @@
+<html>
+
+<head>
+    <script>
+
+        function sub() {
+            var x = parseInt(document.getElementById('x').value);
+            var y = parseInt(document.getElementById('y').value);
+            var z = parseInt(document.getElementById('z').value);
+            l = x + y + z;
+            document.getElementById("result1").innerHTML = " Total of items: " + l;
+        }
+
+        function add() {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            var c = parseInt(document.getElementById('c').value);
+            var d = parseInt(document.getElementById('d').value);
+            r = a - b + c + d;
+            document.getElementById("result").innerHTML = " Total bill: " + r;
+        }
+
+    </script>
+
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+  transition: 0.3s;
+}
+body {
+    background-image: url("https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    overflow: scroll;
+    background-position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(137, 8, 8);
+  z-index: 200;
+  /* box-shadow: 0px 5px 15px rgba(192, 192, 192, 0.63); */
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #f1e6e8;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#8c0707;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li:last-of-type {
+  margin-right: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(241, 215, 215);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+}
+.active-nav-link {
+  border-bottom: 3px solid #3a63c9;
+  color: #3a63c9;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+
+
+
+form {
+    background-color: white;
+    height: fit-content;
+    padding: 50px 80px;
+    margin: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+table{
+    margin: auto;
+}
+
+.calculator{ 
+    border: 4px solid #6a0c0c;
+    background-color: #ff99f7;
+    padding: 23px;
+    border-radius: 53px;
+    display: inline-block;
+    
+}
+
+.calculator input{
+    border-radius: 21px;
+    border: 5px solid #740606;
+    font-size:20px;
+    height: px;
+    width: px;
+}
+
+.calculator button{
+    border-radius: 20px;
+    font-size: 20px;
+    background: #978fa0;
+    width: px;
+    height: px;
+    margin: 3px;
+}
+
+</style>
+
+<body>
+
+
+    <header>
+        <nav>
+          <a href="#"><h1 class="logo">TidalFood</h1></a>
+          <ul class="nav-links">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="sin.html" class="link">SignIn</a></li>
+            <li><a href="sup.html" class="link">SignUp</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="video.html" class="link">Know more</a></li>
+            <li><a href="calc.html" class="link active-nav-link">Bill</a></li>
+            <li>
+              <!--<a href="./cart.html"
+                ><img
+                  class="cart"
+                  src="./assets/cart-icon.svg"
+                  alt=" cart"
+                  title="Shopping Cart"
+              /></a>-->
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+
+    
+    <form>
+        <center><h1>BILL CALCULATOR</h1></center>
+
+        <br>
+        Item 1:&emsp;
+        <input type="text" id="x" /><br /><br>
+        Item 2:&emsp;
+        <input type="text" id="y" /><br /><br>
+        Item 3:&emsp;
+        <input type="text" id="z" /><br /><br>
+        
+        <input type="button" value="Find Total of items" onClick="sub()" />&emsp;
+        <b><center><h3 id="result1" style="text-shadow: 0 0 3px #FF0000;border: 1.5px solid #000;border-radius: 50%;"></h3></center></b>
+
+
+        <br>
+        ITEM COST:&emsp;
+        <input type="text" id="a" /><br /><br>
+        TAX:&emsp;
+        <input type="text" id="b" /><br /><br>
+        DISCOUNT:&emsp;
+        <input type="text" id="c" /><br /><br>
+        SHIPPING:&emsp;
+        <input type="text" id="d" /><br /><br>
+        <input type="button" value="Find Total" onClick="add()" />&emsp;
+        <b><center><h3 id="result" style="text-shadow: 0 0 3px #FF0000;border: 1.5px solid #000;border-radius: 50%;"></h3></center></b>
+
+    </form>
+    
+    <div>
+      <br><br><br><br><br><br>
+      <div class="container">
+        <h1></h1>
+
+        <div class="calculator" style="background-color: white;">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button>C</button></td>
+                    <td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+<script>
+  let screen = document.getElementById('screen');
+buttons = document.querySelectorAll('button');
+let screenValue = '';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+        if (buttonText == 'X') {
+            buttonText = '*';
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+        else if (buttonText == 'C') {
+            screenValue = "";
+            screen.value = screenValue;
+        }
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+        }
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+
+    })
+}
+</script>
+
+</html>
+
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <p id = 'sum'></p>
+    <p id = 'sub'></p>
+    <p id = 'mul'></p>
+    <p id = 'div'></p>
+    <script>
+
+        function sum(a, b){
+            var c = a+b;
+            return c;
+        }
+        function sub(a, b){
+            var c = a-b;
+            return c;
+        }
+        function mul(a, b){
+            var c = a*b;
+            return c;
+        }
+        function div(a, b){
+            var c = a/b;
+            return c;
+        }
+        
+        document.getElementById("sum").innerHTML = "The sum is =" + sum(4,3);
+        document.getElementById("sub").innerHTML = "The sub is =" + sub(4,3);
+        document.getElementById("mul").innerHTML = "The mul is =" + mul(4,3);
+        document.getElementById("div").innerHTML = "The div is =" + div(4,3);
+
+    </script>
+    
+
+</head>
+<body>
+
+</body>
+</html>-->
