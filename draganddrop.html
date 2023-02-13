@@ -3,12 +3,22 @@
 <head>
 <style>
 #div1 {
-  width: 350px;
-  height: 70px;
+  width: 300px;
+  height: 220px;
   padding: 10px;
-  border: 1px solid #aaaaaa;
+  border: 2px solid #2f2a2a;
 }
-</style>
+
+h2,p {
+        color: white;text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+      }
+
+      body{
+        background :url('https://images.pexels.com/photos/7669217/pexels-photo-7669217.jpeg?auto=compress&cs=tinysrgb&w=600');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    </style>
 <script>
 function allowDrop(ev) {
   ev.preventDefault();
@@ -26,13 +36,13 @@ function drop(ev) {
 </script>
 </head>
 <body>
-
-<p>Drag the W3Schools image into the rectangle:</p>
+<center>
+<h2>Drag the food image and drop in the box</h2>
+<p><b>If you drop and take the meal back you'll get the meal <b><q>FREE</q></b></p>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 <br>
-<img id="drag1" src="1.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
-
+<img id="drag1" src="d&dgame.jpeg" draggable="true" ondragstart="drag(event)" style = "max-width:200px;" style = "height:200px;" >
+</center>
 </body>
 </html>
-

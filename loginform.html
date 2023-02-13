@@ -1,4 +1,22 @@
 <html>
+  <head>
+    <style>
+      body{
+        background :url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnR8ZW58MHx8MHx8&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      margin-top: 20%;
+      }
+
+      #box{
+  width: 300px;
+  height: 220px;
+  padding: 10px;
+  border: 4px solid #2f2a2a;
+  border-radius: 6px;
+}
+    </style>
+  </head>
 <body>
 <script>  
 function validateform(){  
@@ -12,13 +30,23 @@ if (name==null || name==""){
   alert("Password must be at least 6 characters long.");  
   return false;  
   }  
-}  
+}
 </script>  
-<body>  
-<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
-Name: <input type="text" name="name"><br/>  
-Password: <input type="password" name="password"><br/>  
-<input type="submit" value="register">  
-</form>  
+<center>
+<div id="box">
+
+  <p>
+  <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+    <div class="col-md-6">
+    Name: <input type="text" name="name">
+    </div><br/>  
+    <div class="col-md-6">
+    Password: <input type="password" name="password">
+  </div><br/>  
+    <button type="submit" class="btn btn-primary" >Login</button>  
+    </form>  
+</p>
+</div>
+</center>
 </body>
 </html>

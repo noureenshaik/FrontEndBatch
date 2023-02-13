@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <style>
+      h2,p {
+        color: white;text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+      }
 
-<h2>JavaScript Geolocation API</h2>
-<p>Click the button to get your coordinates.</p>
+      body{
+        background : linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.65),rgba(0,0,0,0.38),rgba(0,0,0,0)) ,url('https://images.unsplash.com/photo-1520775238456-092ab071594e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FmZSUyMGxpZ2h0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60');
+        background-repeat: no-repeat;
+        background-size: auto;
+        text-align: center;
+      }
+      </style>
+  </head>
+<body >
 
-<button onclick="getLocation()">Try It</button>
+<h2 style="color:white;">Would you like to know about your location</h2>
+<p style="color:white;">Please click the button to get your coordinates.<br>👇👇</p>
+
+<button onclick="getLocation()">Press here</button>
 
 <p id="demo"></p>
 
@@ -21,8 +35,8 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  x.innerHTML = "Latitude: " + position.coords.latitude +"🧭" + 
+  "<br>Longitude: " + position.coords.longitude+"🧭";
 }
 </script>
 
