@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oder</title>
+    <style>
+    h1{
+        margin-right:400px;
+        margin-left:400px;
+        text-align: center;
+        background-color: rgb(216, 227, 227);
+        box-shadow: 5px 5px;
+        border-radius: 5%;
+    
+    }
+        .form1{
+            -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.6s ease-in-out;
+            font-style: italic;
+            margin-top: 10px;
+            margin-right:200px;
+            margin-left:800px;
+            border-radius: 5%;
+            background-color: beige;
+            box-shadow: 5px 5px;
+            border:2px solid rgb(163, 107, 174);
+        }
+        </style>
+  </head>
+ 
+  </head>
+    <body background="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2019/12/Indian-But-Not-Indian-Food-feature.jpg">
+        <h1>bill calculation</h1>
+        <div class="form1">
+        <form>
+          <label for="numBurgers">Number of Dishes:</label>
+          <input type="number" id="numBurgers" name="numBurgers" value="0" min="0">
+          <br><br>
+          <label for="numFries">Number of sweets:</label>
+          <input type="number" id="numFries" name="numFries" value="0" min="0">
+          <br><br>
+          <label for="numDrinks">Number of veg biryani:</label>
+          <input type="number" id="numDrinks" name="numDrinks" value="0" min="0">
+          <br><br>
+          <label for="numBurgers">Number of non veg items:</label>
+          <input type="number" id="numBurger" name="numBurger" value="0" min="0">
+          <br><br>
+          <label for="numFries">Number of chocolates:</label>
+          <input type="number" id="numFrie" name="numFrie" value="0" min="0">
+          <br><br>
+          <label for="numDrinks">Number of water bottles and soft drinks:</label>
+          <input type="number" id="numDrink" name="numDrink" value="0" min="0">
+          <br><br>
+          <button type="button" onclick="calculateBill()">Oder</button>
+        </form>
+        <p id="output"></p>
+        <br><br>
+    </div>
+        
+        <script src="script.js"></script>
+        <script>
+            function calculateBill() {
+            const numBurgers = parseInt(document.querySelector("#numBurgers").value);
+            const numFries = parseInt(document.querySelector("#numFries").value);
+            const numDrinks = parseInt(document.querySelector("#numDrinks").value);
+            const numBurger = parseInt(document.querySelector("#numBurger").value);
+            const numFrie = parseInt(document.querySelector("#numFrie").value);
+            const numDrink = parseInt(document.querySelector("#numDrink").value);
+            const burgerPrice = 120;
+            const friesPrice = 150;
+            const drinkPrice = 210;
+            const burgerPric = 310;
+            const friesPric = 210;
+            const drinkPric = 100;
+            const total = (numBurgers * burgerPrice) + (numFries * friesPrice) + (numDrinks * drinkPrice)+(numBurger * burgerPric) + (numFrie * friesPric) + (numDrink * drinkPric);
+            document.querySelector("#output").innerHTML = "Your Total oder is:"+" ₹"+total;
+            if(total==0){
+                alert("The colums cannot be empty")
+            }else{
+                alert("Your oder is succesfull")
+            }
+                
+            
+            }
+        </script>
+  </body>
+</html>
