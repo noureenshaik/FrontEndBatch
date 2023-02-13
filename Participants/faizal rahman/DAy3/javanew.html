@@ -1,0 +1,44 @@
+<html>
+<body>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <script>
+        a=10;
+        b=20;
+        c=a+b;
+        document.getElementById("demo").innerHTML = "value of c = "+ c;
+    </script>
+    <script>
+        function addition(a,b) {
+            return a+b;
+        }
+        document.getElementById("demo1").innerHTML="The value of c is "+addition(3,5);
+    </script>
+    <script>
+        function subtraction(a,b) {
+            return a-b;
+        }
+        document.getElementById("demo2").innerHTML="The value of c is "+subtraction(5,3);
+    </script>
+    <script>
+        function multiplication(a,b) {
+            return a*b;
+        }
+        document.getElementById("demo3").innerHTML="The value of c is "+multiplication(3,5);
+    </script>
+    <script>
+        function division(a,b) {
+            return a/b;
+        }
+        document.getElementById("demo4").innerHTML="The value of c is "+division(5,3);
+    </script>
+    <h2>My First JavaScript</h2>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    <p id="demo"></p>
+</body>
+</html>
