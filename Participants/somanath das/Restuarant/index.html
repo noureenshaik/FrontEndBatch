@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Shopping Cart with Total Price Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- style -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Noto+Sans+Tagbanwa&family=Pacifico&family=Zeyada&display=swap');
+
+    .d-inline-block {
+      border-radius: 20px;
+      border: 4px solid red;
+    }
+
+    span {
+      font-family: "Pacifico", cursive, sans-serif;
+      color: rgb(218, 97, 22);
+      font-weight: 300;
+      border-radius: 50px 50px;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      font-size: large;
+      text-decoration: underline;
+
+    }
+
+    #left {
+      float: left;
+    }
+
+    .card-title {
+      text-decoration: underline;
+      font-weight: 50px;
+    }
+
+    footer {
+      left: 10px;
+      bottom: 5px;
+      right: 10px;
+      width: 100%;
+      
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="background-image: url(./snap/bg2.avif);">
+
+
+  <!-- navbar -->
+  <div class="container-navbar">
+    <!-- <button> <a class="dropdown-item" href="./geolocaton.html">getLocation</button> -->
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#home"><span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#food-menu"><span>Menu</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+          <li><a href="./geolocaton.html"><span>Location</span></a></li>
+          <li><a href="./validation.html"><span>Sign up</span></a></li>
+          <li><a href="./signup.html"><span>Login</span></a></li>
+
+
+        </ul>
+        <h1 class="logo"><img src="./snap/h1.jpg" alt="" width="90" height="60"><span>Fried Chills</span></h1>
+      </div>
+    </nav>
+
+
+  </div>
+  <marquee width=100% scrollamount="08" style="color: white;">There is something new!😁</marquee>
+  <!-- carousel -->
+  <div class="container">
+    <h3><span>Menu:</span></h3>
+  </div>
+  <div class="container my-2">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <div class="card-group">
+            <div class="card">
+              <img src="./snap/i4.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span href="#indian">Indian</span></h5>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./snap/i2.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"> <span></span></h5>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./snap/i3.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span> </span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card">
+              <img src="./snap/t2.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span href="#Italian">Italian Food </span></h5>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./snap/t1.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span> </span></h5>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./snap/t3.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span> </span></h5>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card">
+              <img src="./snap/c1.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span href="Chinese">Chinese Foods</span></h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./snap/c2.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span></span></h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./snap/c3.jpg" class="card-img-top" alt="..." width="90" height="190">
+              <div class="card-body">
+                <h5 class="card-title"><span> </span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- body -->
+
+
+
+  <div class="container my-2 " id="indian">
+    <span id="indian">INDIAN</span>
+    <div class="row" id="indain">
+      <div class="col-sm-6" id="indian">
+        <div class="card" id="indian">
+          <div class="card-body" id="indian">
+
+            <img src="./snap/i1.jfif" alt="" width="90" height="60"> Dosai
+            <a class="btn btn-white" value="35">Value: 35</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/i2.jpg" alt="" width="90" height="60"> Meals
+            <a class="btn btn-white" value="50">Value: 80</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/i3.jpg" alt="" width="90" height="60"> Mini Meals
+            <a class="btn btn-white" value="90">Value: 80</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/i4.jpg" alt="" width="90" height="60"> Idly
+            <a class="btn btn-white" value="70">Value: 20</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container my-2 " id="Chinese">
+    <span id="Chinese">CHINESE</span>
+    <div class="row" id="Chinese">
+      <div class="col-sm-6" id="Chinese">
+        <div class="card" id="Chinese">
+          <div class="card-body" id="Chinese">
+
+            <img src="./snap/c1.jpg" alt="" width="90" height="60"> Dumplings.
+            <a class="btn btn-white" value="50">Value: 50</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/c2.jpg" alt="" width="90" height="60"> Ma Po Tofu.
+            <a class="btn btn-white" value="80">Value: 80</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/c3.jpg" alt="" width="90" height="60"> Peking duck.
+            <a class="btn btn-white" value="90">Value: 00</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/c2.jpg" alt="" width="90" height="60"> Kung Pao Chicken.
+            <a class="btn btn-white" value="70">Value: 70</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container my-2 " id="Italian">
+    <span id="Italian">ITALIAN</span>
+    <div class="row" id="Italian">
+      <div class="col-sm-6" id="Italian">
+        <div class="card" id="Italian">
+          <div class="card-body" id="Italian">
+
+            <img src="./snap/t1.jpg" alt="" width="90" height="60"> Lasagne
+            <a class="btn btn-white" value="75">Value: 70</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/t2.jpg" alt="" width="90" height="60"> Risotto.
+            <a class="btn btn-white" value="80">Value: 80</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/t3.jpg" alt="" width="90" height="60"> Carpaccio.
+            <a class="btn btn-white" value="90">Value: 90</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+            <img src="./snap/t2.jpg" alt="" width="90" height="60"> Bistecca Alla Fiorentina.
+            <a class="btn btn-white" value="70">Value: 70</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="container">
+
+    <button onclick="cal" style="opacity: 0.5;">calculate</button>
+
+
+  </div> -->
+
+  <footer class="credit">
+    <marquee direction="right" scrollamount="12">
+      <img src="./snap/last.jpg" alt="" width="160" height="90">
+    </marquee>
+    @ <a href='#' style="color: rgb(189, 178, 178);"> Briliant Idea Minds </a>
+    <p>Guides</p>
+    <p>Community</p>
+    <p>Discussion</p>
+  </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!-- <script>
+  cal(){
+    var sum = 0, sum1;
+    sum1 = document.getElementsByClassName('btn btn-white').value;
+    sum = sum + sum1;
+  }
+</script> -->
+
+</html>
