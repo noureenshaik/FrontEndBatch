@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>AMITIE RESTAURANT</h1>
+                <h1>Signup</h1>
+                <p>Have Account? <a href="login.html">Login</a></p>
+            </div>
+            <div class="box">
+                <form class="form"  onclick="registration()"  method="post" >
+                    <label for="fname">Full Name:</label>
+                    <input type="text" class="fullname" id="t1"  required>
+                    <label for="emailid">Email Id:</label>
+                    <input type="email" class="email" id="t2" required>
+                    <label for="username">Username:</label>
+                    <input type="text" class="username" id="t3" required>
+                    <label for="passwd">Password:</label>
+                    <input type="password" class="password" id="t4" required>
+                    <input type="submit" class="button" value="Login" formaction="C:\Users\Varsha.Palani\Desktop\website\login.html">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        function registration(){
+            var name= document.getElementById("t1").value;
+		var email= document.getElementById("t2").value;
+		var uname= document.getElementById("t3").value;
+		var pwd= document.getElementById("t4").value;
+        if(name=='')
+		{
+			alert('Please enter your name');
+		}
+		else if(!letters.test(name))
+		{
+			alert('Name field required only alphabet characters');
+		}
+        else if(email=='')
+		{
+			alert('Please enter your user email id');
+		}
+		else if (!filter.test(email))
+		{
+			alert('Invalid email');
+		}
+        else if(uname=='')
+		{
+			alert('Please enter the user name.');
+		}
+		else if(!letters.test(uname))
+		{
+			alert('User name field required only alphabet characters');
+		}
+        else if(pwd=='')
+		{
+			alert('Please enter Password');
+		}
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<style>
+   .main{
+  background-image: url('2.jpg');
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  
+ 
+} 
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 5px;
+  text-align: center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+
+button{
+    background:rgba(0,0,0,0.2);
+    border:2px solid #f7f5f2;
+    padding: 9px 25px;
+}
+a,button{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:black;
+    transition: all 0.3s ease 0s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+	width: 100%;
+	height: 100%
+}
+
+.navbar{
+	width: 100%;
+	height: 75px;
+	background: #0d0d0e;
+}
+
+.navbar > ul{
+	display: flex;
+	justify-content: center;	
+}
+
+.navbar ul li{
+	position: relative;
+}
+
+.navbar ul li a{
+	display: block;
+    color: #fff;
+    height: 60px;
+    width: 180px;
+    text-align: center;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar ul > li a{
+	margin-right: 1px;
+}
+
+.navbar ul > li:last-child a{
+	margin-right: 0;
+}
+
+.navbar ul li a .icon {
+    width: 25px;
+    display: inline-block;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.a_parent.active,
+.navbar .dd_menu ul li a:hover,
+.navbar .dd_menu ul li a.active{
+	background:rgb(48, 43, 48);
+}
+
+.navbar .dd_menu{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	display: none;
+}
+
+.navbar .dd_menu ul li a{
+	width: 180px;
+	background: #0f0f0f;
+	text-align: left;	
+	padding: 20px;
+}
+
+.navbar .dd_menu:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent #0a0a0a transparent;
+}
+
+.navbar ul li a.a_parent.active + .dd_menu{
+	display: block;
+}
+
+.dd_submenu {
+    position: absolute;
+    top: 0;
+    left: 115%;
+    width: 100%;
+    display: none;
+}
+
+.dd_submenu:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent #121213 transparent transparent;
+}
+
+.navbar ul li a.dd_menu_a.active + .dd_submenu{
+	display: block;
+}
+
+#div1 {
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+ 
+
+</style>
+
+</head>
+<body>
+    <div class="main">
+    
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="logo"><p>AMITIE</p></div>
+                <ul>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\home.html" class="a_parent">
+                        <div class="wrap">
+                            
+                            <span class="text">Home</span>
+                        </div>
+                    </a></li>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\about.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="text">About</span>
+                        </div>
+                        </a>
+                        
+        
+                    </li>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\menu.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="text">Menu</span>
+                        </div>
+                        </a>
+                        <div class="dd_menu">
+                            <ul>
+                                <li>
+                                    <a href="C:\Users\Varsha.Palani\Desktop\website\indian.html" class="dd_menu_a">
+                                        <div class="wrap">
+                                            <span class="text">
+                                            Indian
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="dd_submenu">
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="C:\Users\Varsha.Palani\Desktop\website\Italian.html" class="dd_menu_a">
+                                        <div class="wrap">
+                                            
+                                            <span class="text">Italian</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="C:\Users\Varsha.Palani\Desktop\website\chinese.html" class="dd_menu_a">
+                                        <div class="wrap">
+                                        
+                                        <span class="text">Chinese</span>
+                                        </div>
+                                    </a>
+                                </li>
+                              </ul>  
+                            </div>
+                        
+                            <li><a href="C:\Users\Varsha.Palani\Desktop\website\invoice.html" class="a_parent">
+                                <div class="wrap">
+                                    
+                                    <span class="text">Invoice</span>
+                                </div>
+                            </a></li>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\Images.html" class="a_parent">
+                        <div class="wrap">
+                            
+                            <span class="text">Images</span>
+                        </div>
+                    </a></li>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\contact.html" class="a_parent">
+                        <div class="wrap">
+                            
+                            <span class="text">Contact</span>
+                        </div>
+                    </a></li>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\location.html" class="a_parent">
+                        <div class="wrap">
+                            
+                            <span class="text">Location</span>
+                        </div>
+                    </a></li>
+                    <li><a href="C:\Users\Varsha.Palani\Desktop\website\login.html" class="a_parent">
+                        <div class="wrap">
+                            
+                            <span class="text">Signout</span>
+                        </div>
+                    </a></li>
+                    </ul>
+            </div>
+        </div>
+        
+     <br>
+     <br>
+    <div class="bg-text">
+        
+        <h4>Grap your favourite bite</h4>
+        <center>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+<br>
+<img id="drag1" src="I1.jpg" draggable="true" ondragstart="drag(event)" width="450px" height="250px">
+<img id="drag1" src="I6.jpg" draggable="true" ondragstart="drag(event)" width="450px" height="250px">
+
+
+        
+</center>   
+      </div>
+
+    </div>
+
+    <script >
+        var a_parent =  document.querySelectorAll(".a_parent");
+var dd_menu_a = document.querySelectorAll(".dd_menu_a");
+
+a_parent.forEach(function(aitem){
+
+		aitem.addEventListener("click", function(){
+			a_parent.forEach(function(aitem){
+				aitem.classList.remove("active");
+			})
+			dd_menu_a.forEach(function(dd_menu_item){
+				dd_menu_item.classList.remove("active");
+			})
+			aitem.classList.add("active");
+		})
+})
+
+dd_menu_a.forEach(function(dd_menu_item){
+
+		dd_menu_item.addEventListener("click", function(){
+			dd_menu_a.forEach(function(dd_menu_item){
+				dd_menu_item.classList.remove("active");
+			})
+			dd_menu_item.classList.add("active");
+		})
+})
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</body>
+</html>
