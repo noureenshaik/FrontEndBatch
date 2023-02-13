@@ -1,0 +1,171 @@
+<html>
+
+<head>  <title> INDIAN CRICKET TEAM </title> </head>
+
+<body> 
+
+ <img src="C:\Users\Gokul.Adaikkalam\Desktop\Practice\LOGO.png" alt ="DISYS" >
+
+ <h1> Virat Kohli </h1> 
+
+ <p> He was the captain of Indian Cricket Team</p>
+
+  <ul>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target ="_blank">player<a/> </li>
+   	<li> He plays <a href="https://www.cricbuzz.com/profiles/1413/virat-kohli">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He is also known as <a href="https://en.wikipedia.org/wiki/Virat_Kohli#Honours">Run machine<a/> </li>
+   	<li> He Scored more than 70 <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">Centuries<a/> </li>
+  </ul>
+  <p> He does lots of training before playing matches.</P>
+  <ol>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/Virat_Kohli#Career_summary">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/Virat_Kohli#Honours">runs<a/> </li>
+  </ol>
+    
+  <style>
+  table,th,td
+  { border :1px dotted red;
+  }
+  </style>
+
+  <table> 
+  <tr>
+    <th> S.NO </th>
+    <th> NAME </th>
+    <th> MATCHES</th>
+    <th> RUNS SCORED </th>
+    <th> AVERAGE </th>
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> VIRAT KOHLI </td>
+    <td> 500</td>
+    <td> 30,000</td>
+    <td> 60 </td>
+  </tr>
+  <tr>
+    <td> 2 </td>
+    <td> ROHIT SHARMA </td>
+    <td> 600</td>
+    <td> 20,590</td>
+    <td> 40 </td>
+  </tr>
+  <tr>
+    <td>3 </td>
+    <td> KL RAHUL </td>
+    <td> 350</td>
+    <td> 12,000</td>
+    <td> 43 </td>
+  </tr>
+   </table>
+  
+
+  <h2> KL Rahul </h2> 
+
+  <body style="background-color:lightgrey">
+
+
+  <p> He is the opening batsmen of Indian Cricket Team</p>
+  <ul>
+  	<li> He is a cricket <a href="https://www.espncricinfo.com/cricketers/kl-rahul-422108">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://www.cricbuzz.com/profiles/8733/kl-rahul">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ul>
+  <p> He does lots of training before playing matches.</P>
+  <ol>
+  	<li> He is a cricket <a href="https://www.espncricinfo.com/cricketers/kl-rahul-422108">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://www.cricbuzz.com/profiles/8733/kl-rahul">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ol>
+  
+
+  <h3> Shreyas Iyer </h3> 
+  <p> He is a batsman and good fielder</p>
+  <ul>
+  	<li> He is a cricket <a href="https://www.cricbuzz.com/profiles/9428/shreyas-iyer">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://www.espncricinfo.com/cricketers/shreyas-iyer-642519">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ul>
+  <p> He does lots of training before playing matches.</P>
+  <ol>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ol>
+
+
+  <h4> Rohit Sharma </h4> 
+  <p> He is the captain of Indian Cricket Team</p>
+  <ul>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ul>
+  <p> He does lots of training before playing matches.</P>
+  <ol>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ol>
+
+
+  <h5> Jasprit Bumrah </h5> 
+  <p> He is a  fast bowler</p>
+  <ul>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ul>
+  <p> He does lots of training before playing matches.</P>
+  <ol>
+  	<li> He is a cricket <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">player<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+      <li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> He Scores lots of <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">runs<a/> </li>
+  </ol>
+
+
+  <h6> Kuldeep yadav </h6> 
+  <p> He is a spin bowler</p>
+  <ul>
+  	<li>  Kuldeep played his first India U-19 game in <a href="https://www.espncricinfo.com/cricketers/kuldeep-yadav-559235">April 2012<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+   	<li> Kuldeep Yadav started as a <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">fast bowler<a/> </li>
+      <li> Then he switched to left arm wrist <a href="https://www.sportskeeda.com/player/kuldeep-yadav">spin<a/> </li>
+   	<li> Kuldeep was part of MI in <a href="https://www.cricketpedia.in/en/search/kuldeep-yadav-vs-mi">2012<a/> </li>
+  </ul>
+  <p> He does lots of training before playing matches.</P>
+  <ol>
+  	<li> Kuldeep was part of MI in <a href="https://www.cricketpedia.in/en/search/kuldeep-yadav-vs-mi">2012<a/> </li>
+   	<li> Kuldeep Yadav started as a <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">fast bowler<a/> </li>
+      <li> Then he switched to left arm wrist <a href="https://www.sportskeeda.com/player/kuldeep-yadav">spin<a/> </li>
+      <li> Kuldeep played his first India U-19 game in <a href="https://www.espncricinfo.com/cricketers/kuldeep-yadav-559235">April 2012<a/> </li>
+   	<li> He plays <a href="https://en.wikipedia.org/wiki/India_national_cricket_team">well<a/> </li>
+  </ol>
+  
+
+</body>
+
+</html>
+
+
+

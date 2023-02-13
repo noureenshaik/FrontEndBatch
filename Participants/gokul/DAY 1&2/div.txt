@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>COMPANIES</title>
+</head>
+<body>
+
+<style>
+
+.firstdiv{
+background-color :yellow;
+border :2px solid black;
+}
+</style>
+
+<h2> IBM </h2>
+<p> IBM is best known for producing and selling computer hardware and software, as well as cloud computing and data analytics. The company has also served as a major research and development corporation over the years, with significant inventions like the floppy disk, the hard disk drive, and the UPC barcode.
+</p>
+
+<h2> HCL </h2>
+<p>HCL Technologies Limited, d/b/a HCLTech (formerly Hindustan Computers Limited), is an Indian multinational information technology (IT) services and consulting company headquartered in Noida. It emerged as an independent company in 1991 when HCL entered into the software services business.[7] The company has offices in 52 countries and over 210,966 employees.
+</P>
+
+
+</body>
+</html>
