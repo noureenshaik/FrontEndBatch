@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      body {
+        background-image: url("https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg");
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 50%;
+      }
+
+      .form-container {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-container h1 {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+
+      .form-container input[type="submit"] {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .form-container input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .form-container a {
+        width: 40%;
+        font-size: 14px;
+        color: #333;
+        margin-top: 20px;
+        text-decoration: none;
+      }
+      header {
+        background-image: url();
+        background-color: PeachPuff;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header  >
+      <h1 style="font-family:  Georgia;">Delicious Delights</h1>
+      <nav>
+        <ul>
+          <li><a href="sample res.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="login_page.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="form-container">
+        <h1>Login</h1>
+        <form action="#">
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="submit" value="Submit" />
+        </form>
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+  </body>
+  <footer style="background-color: peachpuff;">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Delicious Delights is a family-owned restaurant, serving authentic Japenese,Indian and Korean dishes with a passion for quality and service. Our menu features a variety of mouth-watering dishes that are sure to tantalize your taste buds.</p>
+        <p>Join us for lunch or dinner and experience the true taste of international cuisine. We look forward to serving you soon!</p>
+      </section>
+    </footer>
+</html>

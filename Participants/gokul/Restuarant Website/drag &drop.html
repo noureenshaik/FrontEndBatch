@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+header {
+        background-image: url();
+        background-color: PeachPuff;
+      }
+</style>
+<header  >
+  <h1 style="font-family:  Georgia;">Delicious Delights</h1>
+  <nav>
+    <ul>
+      <li><a href="sample res.html">Home</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="login_page.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag DISYS image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="LOGO.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+<footer style="background-color: peachpuff;">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Delicious Delights is a family-owned restaurant, serving authentic Japenese,Indian and Korean dishes with a passion for quality and service. Our menu features a variety of mouth-watering dishes that are sure to tantalize your taste buds.</p>
+            <p>Join us for lunch or dinner and experience the true taste of international cuisine. We look forward to serving you soon!</p>
+          </section>
+        </footer>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      <p id="dem"></p>
+      <p id="demo"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <button type="button"
+      onclick="document.getElementById('dem').innerHTML = Date()">
+      Click me to display Date and Time.
+       </button>
+        <script>
+            
+           function add(a,b){
+             return a+b;
+           }
+          document.getElementById("demo").innerHTML ="ADD : "+ add(5,8);
+
+          function subract(c,d){
+             return c-d;
+           }
+          document.getElementById("demo2").innerHTML ="SUBRACT : " + subract(10,8);
+
+          function multiply(a,b){
+             return a*b;
+           }
+          document.getElementById("demo3").innerHTML ="MULTIPLY: " + multiply(10,8);
+
+          function Divide(a,b){
+             return a/b;
+           }
+          document.getElementById("demo4").innerHTML ="DIVISION: " + Divide(10,8);
+
+          
+
+        
+        </script>
+    </body>
+</html>
