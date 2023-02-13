@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .whole{
+            margin-right: 100px;
+            margin-left:900px;
+        }
+      .whole{
+        margin-right: 100px;
+        margin-left:900px;
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNbK0yXkK5CSiKh9pq_ud_Qv3C9YSifccQDu2XrIrGtrZODxzyCShXBy3eJzt06rnOXs&usqp=CAU");
+        border-radius: 5%;
+        box-shadow: 0px 0px 10px 2px rgba(91, 55, 174, 0.2);
+      }
+      .b1{
+        margin-right: 100px;
+        margin-left:900px;
+        background-color: blue;
+		    color: white;
+		    padding: 10px 20px;
+		    border: none;
+		    border-radius: 5px;
+		    font-size: 16px;
+		    cursor: pointer;
+      }.thumbnail{
+        border-radius: 20%;
+      }img{
+        border-radius: 20%;
+        background-color: none;
+      }.a123{
+        margin-right: 200px;
+        margin-left:200px;
+
+      }
+      .login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}.login-box{
+  margin-top:0px;
+  margin-left: 300px;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}.container{
+  margin-top:300px;
+}.wq{
+  background-color: rgb(181, 210, 181);
+}.sa{
+   background-color: none;
+}
+
+    </style>
+
+</head>
+<body background="dosa.jpg">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">NS Restaurent</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Your orders</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="Login">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <marquee class="wq">NS restaurent welcomes you</marquee>
+      <form action="gio.html">
+        <div class="login-box" >
+          <h2>Login</h2>
+          <form >
+            <div class="user-box">
+              <input type="text" name="" required id="s1">
+              <label>Username</label>
+            </div>
+            <div class="user-box">
+              <input type="password" name="" required id="s2">
+              <label>Password</label>
+            </div>
+            <button type="submit" onclick="myfunction()"class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </form>
+      
+      <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+      
+            <div class="item active">
+              <a href="bill.html"><img src="https://media.istockphoto.com/id/1403976698/photo/assorted-indian-various-food-with-spices-rice-and-fresh-vegetables.jpg?b=1&s=170667a&w=0&k=20&c=wcdoXaNuPuyRNQe5w7BHLhvOGw_roILTmJDCFBg5ZOU=" alt="Chania" width="300" height="300"></a>
+              <div class="carousel-caption">
+                <h3>Indian</h3>
+              </div>
+            </div>
+      
+            <div class="item">
+              <a href="bill2.html"><img src="https://thumbs.dreamstime.com/b/assorted-chinese-food-set-noodles-fried-rice-dumplings-peking-duck-dim-sum-spring-rolls-famous-cuisine-dishes-74023556.jpg" alt="Chania" width="300" height="300"></a>
+              <div class="carousel-caption">
+                <h3>Chinese</h3>
+              </div>
+            </div>
+          
+            <div class="item">
+              <a href="bill3.html"><img src="https://assets.thehansindia.com/h-upload/2020/03/14/953945-food.webp" alt="Flower" width="300" height="300"></a>  
+              <div class="carousel-caption">
+                <h3>Non-Veg</h3>
+              </div>
+            </div>
+      
+            <div class="item">
+              <a href="bill4.html"><img src="https://thumbs.dreamstime.com/b/indian-thali-26440151.jpg" alt="Flower" width="300" height="300"></a>
+              <div class="carousel-caption">
+                <h3>Veg</h3>
+              </div>
+            </div>
+        
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <marquee img src="dosa.jpg" width="200" height="200"></marquee>
+      <marquee class="sa"><a href="https://sri630950.github.io/saveethaattendencecheck/"><h1>Click Me To get my Own Website with my own logic.</h1></a></marquee>
+      <marquee class="sa"><a href="drag.html"><h1>click to get drag.</h1></a></marquee>
+      <marquee class="sa"><a href="gio.html"><h1>click to get giolocation.</h1></a></marquee>
+      <script>
+        function myfunction(){
+            var text=document.getElementById("s1").value;
+            var text1=document.getElementById("s2").value;
+            if(text==null || text=="" ){
+                alert("The colum cannot be blank.");
+            }else if(text1.length<6){  
+                alert("Password must be at least 6 characters long.");  
+            }else{
+              alert("You are succesfully login.");  
+            }
+        }
+      </script>
+</body>
+</html>

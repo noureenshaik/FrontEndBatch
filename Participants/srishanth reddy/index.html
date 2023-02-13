@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveetha Attendence Check</title>
+    <style>
+        img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+      filter: blur(5px);
+            }
+        .d1{
+            font-style: italic;
+            margin-top: 10px;
+            margin-right:500px;
+            margin-left:500px;
+            border-radius: 5%;
+            background-color: beige;
+            box-shadow: 5px 5px;
+            border:2px solid rgb(199, 165, 165);
+            
+        }img{
+            border-radius: 5%;
+            margin-left:auto;
+            background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+            box-shadow: 5px 5px;
+        }
+        .img1{
+            border-radius: 5%;
+            margin-left:1000px;
+            background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+            box-shadow: 5px 5px;
+        }.p1{
+            margin-right:500px;
+            margin-left:500px;
+            border-radius: 5%;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNbK0yXkK5CSiKh9pq_ud_Qv3C9YSifccQDu2XrIrGtrZODxzyCShXBy3eJzt06rnOXs&usqp=CAU");
+            box-shadow: 5px 5px;
+            border:2px solid rgb(49, 36, 36);
+                   }
+        .s{ 
+	        width: 150px;
+	        height: 50px;
+	        font-size: 20px;
+	        margin: 10px;
+	        padding: 10px;
+	        background-color: #4CAF50; /* Green */
+	        color: white;
+	        border: none;
+	        border-radius: 10px;
+	        cursor: pointer;
+           }.sb{
+            width: 150px;
+	        height: 50px;
+	        font-size: 15px;
+	        margin: 10px;
+	        padding: 10px;
+	        background-color: #919f92; /* Green */
+	        color: white;
+	        border: none;
+	        border-radius: 10px;
+	        cursor: pointer;
+           }
+           marquee{
+            background-color: rgb(230, 225, 213);
+            text-shadow: black;
+            box-shadow: #4CAF50;
+            margin-left: 180px;
+            margin-right: 200px;
+           }
+    </style>
+</head>
+
+<body>
+    <marquee>Saveetha School of Engineering</marquee>
+    <img class="background" src="library.jpeg" alt="Aleq">
+    <img src="SSE.png" width="100" height="100">
+    <img class="img1" src="su.logo.jfif"width="100" height="100">
+    <p class="p1">Update Attendence</p>
+    <div class="d1">
+    <form>
+        <label for="no of days" >Total Hours </label><br>
+          <input type="number" id="days" placeholder="Total days"><br>
+          <label for="no of present" >Attended Hours</label><br>
+          <input type="number"id="absent" placeholder="total present days"><br>
+          <label for="no of absents" >No of days going to put absent</label><br>
+          <input type="number"id="absen" placeholder="upcoming absent"><br>
+          <button class="s" type="button" onclick="attendence()">Submit</button>
+
+    </form>
+    <p id="tipAmount"></p>
+    <a href="https://arms.sse.saveetha.com/"><button class="sb">Saveetha Arms</button></a>
+    </div>
+    
+    <marquee img src=""></marquee>
+    <script>
+        function attendence() {
+            const q = parseInt(document.querySelector("#days").value);
+            const w = parseInt(document.querySelector("#absent").value);
+            const i = parseInt(document.querySelector("#absen").value);
+            const a = q + i;
+            const b = w;
+            const c = b * 100;
+            const d = c / a;
+            const r=Math.trunc(d)
+            if(q==null || q=="")
+            {
+                alert("The 1st colum cannot be empty");
+            }else if(w==null || w==""){
+                alert("The 2nd colum cannot be empty");
+
+            }else if(i==null || i==""){
+                alert("The 3rd colum cannot be empty");
+            }
+            else{
+                if(d>=r+(0.5)){
+                    
+                document.querySelector("#tipAmount").innerHTML  = "The attendence after "+i+" days is "+(r+1)+"%";
+
+                }else{
+                    document.querySelector("#tipAmount").innerHTML = "The attendence after "+i+" days is "+(r)+"%";
+                }
+
+            }
+            }
+            
+            
+    </script>
+</body> 
+</html>
