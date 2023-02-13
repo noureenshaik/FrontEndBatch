@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- login links -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--drag and drop header-->
+    <style style="padding-inline-start: 100px;">
+      #div1 {
+
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+        float: inline-start;
+        border: 1px solid hsl(0, 100%, 0%);
+    background-color: #ff2600;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    place-content:bottom;
+    
+      }
+      </style>
+      <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      
+      function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+      }
+      
+      function drop(ev) {
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+        ev.preventDefault();
+      }
+      </script>
+
+
+
+    
+  <title>Indian Menu</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
+<body>
+  
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+          <a href="output.html" class="w3-bar-item w3-button">HOME</a>
+         
+        </div>
+      </div>
+      </body>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+    
+      <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'PIndian cuisine');" id="myLink">
+          <div class="w3-tag w3-red w3-round">INDIAN CUISINE</div>
+
+      <div id="Indian cuisine" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Aloo Parantha</b> <span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$50.00</p></span></h1>
+        <hr>
+     
+        <h1><b>Pav Bhaji</b> <span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$15.50</p></span></h1>
+        <hr>
+        
+        <h1><b>Briyani</b> <span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$70.00</p></span></h1>
+        <hr>
+  
+        <h1><b>Chettinadu Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$50.00</p></span></h1>
+      
+        <hr>
+  
+        <h1><b>Indian meals</b> <span class="w3-tag w3-grey w3-round">BEST SELLER</span><span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$75.00</p></span></h1>
+        <hr>
+  
+        <h1><b>Sambar Special</b><span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$20.00</p></span></h1>
+        <hr>
+       
+        <h1><b>Curd Special</b><span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$15.00</p></span></h1>
+        <hr>
+       
+
+       
+        <h1><b>Chilli Chicken  </b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$50.00</p></span></h1>
+        <hr>
+        
+
+        <h1><b>Chapathi  </b><span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$25.00</p></span></h1>
+        <hr>
+
+      
+
+        <h1><b>Fried Rice </b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round"><p id="drag1" draggable="true" ondragstart="drag(event)">$75.00</p></span></h1>
+        <hr>
+        <center>
+          <h1>YOUR CART</h1>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </center>
+      </div>
+
+      <center>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p >Enter the First  Item cost: <input id="first"></p>
+        <p >Enter the Second Item cost: <input id="second"></p>
+        <p >Enter the Third  Item cost: <input id="third"></p>
+        <p >Enter the Fourth Item cost: <input id="fourth"></p><br>
+        <button  class="btn btn-outline-dark" style="color: aliceblue;" onclick="add()">Total</button>
+        <br><br>
+        <p> Amount to pay = <input id="answer"></p>
+    
+  
+        <script>
+        function add(){
+            var numOne, numTwo, ans;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            numThree = parseInt(document.getElementById("third").value);
+            numFourth = parseInt(document.getElementById("fourth").value);
+        
+            ans = numOne + numTwo + numThree+ numFourth;
+            document.getElementById("answer").value = ans;
+    
+            }
+           </script>
+        </center>
+
+    </body>
+</html>
+      
