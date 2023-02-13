@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script>
+      async function getRestaurants() {
+        const response = await fetch(
+          "https://api.yelp.com/v3/businesses/search?term=restaurant&location=San+Francisco",
+          {
+            headers: {
+              Authorization: "Bearer <your API key here>"
+            }
+          }
+        );
+        const data = await response.json();
+        const restaurants = data.businesses;
+        const list = document.getElementById("restaurant-list");
+        restaurants.forEach(restaurant => {
+          const item = document.createElement("li");
+          item.innerHTML = `${restaurant.name} - ${restaurant.location.address1}`;
+          list.appendChild(item);
+        });
+      }
+    </script>
+  </head>
+  <body onload="getRestaurants()">
+    <h1>Restaurants in San Francisco</h1>
+    <ul id="restaurant-list"></ul>
+  </body>
+</html>

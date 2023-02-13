@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .center p, h2, button {
+        margin: 10px 0;
+      }
+      body,h1{
+        background:url("assets/img/greg-rosenke-1TjORT2dLOw-unsplash.jpg") ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: white;
+      }
+    </style>
+  </head>
+    <body >
+
+    
+     <div class="center">
+      <h1 class="logo me-auto me-lg-0">Get Your Location</h1>
+      <p>Click the button to get your coordinates.</p>
+      <button onclick="getLocation()">Try It</button>
+      <p id="demo"></p>
+    </div>
+    
+    <script>
+      const x = document.getElementById("demo");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>
