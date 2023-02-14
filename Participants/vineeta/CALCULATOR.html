@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+          body{
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 50%;
+            background-size: cover;
+           
+          }
+        </style>
+      </head>
+    <body background="77.jpg">
+        <CENTER>
+        <p> CALCULATOR</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p>Enter the First Number: <input id="first"></p>
+        <p>Enter the Second Number: <input id="second"></p>
+        <button onclick="add()">Add</button><button onclick="sub()">Sub</button><button onclick="mul()">Mul</button><button onclick="div()">Div</button>
+        <p>Answer = <input id="answer"></p>
+        <script>
+        function add(){
+            var numOne, numTwo, ans;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            ans = numOne + numTwo;
+            document.getElementById("answer").value = ans;
+
+            }
+            function sub(){
+            var numOne, numTwo, ans;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            ans = numOne - numTwo;
+            document.getElementById("answer").value = ans;
+
+            }
+            function mul(){
+            var numOne, numTwo, ans;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            ans = numOne * numTwo;
+            document.getElementById("answer").value = ans;
+
+            }
+
+            function div(){
+            var numOne, numTwo, ans;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            ans = numOne / numTwo;
+            document.getElementById("answer").value = ans;
+
+            }
+
+        </script>
+        </CENTER>
+    </body>
+</html>
