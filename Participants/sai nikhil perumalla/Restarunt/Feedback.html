@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+        #getData {
+            width: 250px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #4f4d4d;
+        }
+        </style>
+        <script>
+        function allowDrop(even) {
+            even.preventDefault();
+        }
+    
+        function drag(even) {
+            even.dataTransfer.setData("text", even.target.id);
+        }
+    
+        function drop(even) {
+            even.preventDefault();
+            var fetchData = even.dataTransfer.getData("text");
+            even.target.appendChild(document.getElementById(fetchData));
+        }
+        </script>
+    </head>
+    <style>
+        body{
+            background-color: rgb(186, 246, 246);
+            background-image: url(BG.jfif);
+        }
+        h3{
+            color: aliceblue;
+        }
+    </style>
+    <nav class="navbar " style="background-color: rgb(155, 127, 255); opacity: 0.8;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="restarunt.html">Year &nbsp; Of &nbsp; Delicious</a>
+        </div>
+      </nav>
+       
+        <div style="display: grid; grid-template-columns: 1fr 1fr;">
+            <div>
+        <h3>If we feel sad U can drag and drop only sad face in this Box</h3>
+        <div id="getData"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event )">
+        </div>
+    
+        <img id="dragData"
+            src="sad.jpg "
+            draggable="true"
+            ondragstart="drag(event)"
+            width="250"
+            height="200">
+        </div>
+   
+    
+       <div>
+            <style>
+                #div1 {
+                    width: 250px;
+                    height: 200px;
+                    padding: 10px;
+                    border: 1px solid #aaaaaa;
+                }
+            </style>
+ 
+
+    
+    <h3>If we feel Happy U can drag and drop only happy face in this Box</h3>
+            <div id="div1" ondrop="drop(event)"
+                ondragover="allowDrop(event)">
+            </div>
+            
+            
+            <img id="drag1" src=
+        "Happy emoji.png"
+                draggable="true" ondragstart="drag(event)"
+                width="250" height="200">
+        
+            <script>
+                function allowDrop(ev) {
+                    ev.preventDefault();
+                }
+        
+                function drag(ev) {
+                    ev.dataTransfer.setData("text", ev.target.id);
+                }
+        
+                function drop(ev) {
+                    ev.preventDefault();
+                    var data = ev.dataTransfer.getData("text");
+                    ev.target.appendChild(document.getElementById(data));
+                }
+            </script>
+       </div> 
+        
+
+        
+
+
+    </div>
+    <style> 
+        .q{
+            margin-left: 40%;
+        }
+    </style>
+    <form action="Thanks2.html">
+    <button class="q" >SUBMIT</button>
+</form>
+            
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
