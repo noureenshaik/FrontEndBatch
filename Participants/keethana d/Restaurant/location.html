@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+          <a class="navbar-brand" href="#">StateSide</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Main.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="location.html">Location</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      </nav>
+      <section id="contact" class="contact">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2><span>Contact</span> Us</h2>
+          </div>
+        </div>
+  
+        <div class="map1">
+          <div id = "map"></div>
+          <script>
+            function myMap() {
+              var options = {
+                zoom:13,
+                center:{lat:12.991097,lng:80.246916}
+              }
+              var map = new
+              google.maps.Map(document.getElementById('map'), options);
+              var marker = new google.maps.Marker({
+                position:{lat:12.991097,lng:80.246916},
+                map:map,
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuTMQrSbuY1WZIQT7NegGW9dN6yWu7ov0&callback=myMap"></script>
+  
+        </div>
+      </body>
+      </html>
