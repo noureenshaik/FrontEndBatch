@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+ <title>Bootstrap demo</title>
+<style>
+
+	.first{
+		background-color: #c0c0c0 ;
+	}
+
+	.second{
+		background-color: #357EC7;
+	}
+	
+	.third{
+		background-color: #FFA500;
+	}
+	
+	.fourth{
+		background-color: #6495ED;
+	}
+	
+	.fifth{
+		background-color: #56A5EC;
+	}
+		
+	.sixth{
+		background-color: #008000;
+	}
+	
+	.seventh{
+		background-color: #82CAFF;
+	}
+			
+	.eighth{
+		background-color: #87CEEB;
+	}
+	
+	.ninth{
+		background-color: #ADDFFF;
+	}
+		
+	.tenth{
+		background-color: #7FFFD4;
+	}
+	img{
+		display: block;
+	  	margin-left: auto;
+  		margin-right: auto;
+	}
+
+</style>
+ </head>
+<body>
+<div class= "first">
+	<h1>hp</h1>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\hp.jpg" alt= "hp.jpg" width=250 height=100> 
+	The Hewlett-Packard Company, commonly shortened to Hewlett-Packard or HP, was an American multinational information technology company headquartered in Palo Alto, California
+</div>	
+	
+<div class= "second">
+	<h2> Amazon</h2>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\Amazon.jpg" alt= "Amazon.jpg" width=250 height=100> 
+	<p>Amazon.com, Inc. is an American multinational technology company focusing on e-commerce
+	
+</div>
+
+<div class= "third">
+	<h3> facebook</h3>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\facebook.jpg" alt= "facebook.jpg" width=250 height=100> 
+	<p>facebook is an online social media and social networking service owned by American company Meta Platforms. Founded in 2004 by Mark Zuckerberg
+</div>
+
+<div class= "fourth">
+	<h4>Siemens</h4>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\siemens.jpg" alt= "siemens.jpg" width=250 height=100> 
+     <p>Siemens is a German multinational conglomerate corporation and the largest industrial manufacturing company in Europe headquartered in Munich with branch
+</div>
+
+<div class= "fifth">
+	<h5>google<a/h5>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\google.jpg" alt= "google.jpg" width=250 height=100> 
+	<p>Google LLC is an American multinational technology company focusing on search engine technology, online advertising, cloud computing, computer software
+</div>
+
+<div class= "sixth">
+	<h6> cognizant</h6>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\cognizant.jpg" alt= "cognizant.jpg" width=250 height=100> 
+	<p>Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, United States
+</div>
+
+<div class= "seventh">
+	<h7>jsw</h7>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\jsw.jpg" alt= "jsw.jpg" width=150 height=150> 
+	<p>JSW Group is an Indian multinational conglomerate, based in Mumbai. It is led by Sajjan Jindal and is part of the O.P. Jindal Group.
+</div>
+
+<div class= "eighth">
+	<h8>NOKIA</h8>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\nokia.jpg" alt= "nokia.jpg" width=150 height=150
+     <p>Nokia Corporation (natively Nokia Oyj, referred to as Nokia) is a Finnish multinational ; The company has operated in various industries over the past 150 years.
+</div>
+
+<div class= "ninth">
+	<h9>bosch</h9>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\bosch.jpg" alt= "bosch.jpg" width=150 height=150> 
+     <p>obert Bosch GmbH commonly known as Bosch and stylized as BOSCH, is a German multinational engineering and technology company headquartered in Gerlingen
+<div class= "tenth">
+	<h10>TCS</h10>
+	<img src="C:\Users\Kavyasree.Jalapati\Documents\COMPANIES\TCS.jpg" alt= "TCS.jpg" width=300 height=100> 
+     <p>Tata Consultancy Services (TCS) is an Indian multinational information technology (IT) services and consulting company with its headquarters in Mumbai.
+</div>
+	
+</body>
+</html>/

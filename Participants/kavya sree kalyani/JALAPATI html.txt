@@ -1,0 +1,170 @@
+HTML
+
+
+<html>
+<head>
+<title>Gamma Batch</title>
+<p>foodies</p>
+<style>
+table,th,td{
+      border:1px solid black;
+}
+</style>
+</head>
+<body>
+<img src="C:\Users\Kavyasree.Jalapati\Documents\New folder\images.jpg" alt="images.jpg" width=100 height=100>
+<h1>Hello!I Am Kaya sree kalyani</h1>
+<p> kiddish </p>
+
+<ul>
+<li>chicken
+<li>spicy
+<li>chicken fry
+<li>chicken briyani
+<li>chicken dum briyani
+</ul>
+<ol>
+<li>chicken
+<li>spicy
+<li>chicken fry
+<li>chicken briyani
+<li>chicken dum briyani
+</ol>
+<p><a href ="https://en.wikipedia.org/wiki/Chicken">chicken </a> </p>
+<p><a href ="https://www.allrecipes.com/recipe/174452/chicken-seasoning-blend/">spicy </a> </p>
+<p><a href ="https://https://www.cubesnjuliennes.com/chicken-fry/"> chicken fry</a> </p>
+<p><a href ="https://https://www.indianhealthyrecipes.com/chicken-biryani-recipe/">chicken briyani </a> </p>
+<p><a href ="https://https://www.indianhealthyrecipes.com/chicken-dum-biryani/">chicken dum briyani </a> </p>
+<ul>
+<li>panner
+<li>panner butter masala
+<li>panner fry
+<li>panner briyani
+<li>tikka panner masala
+</ul>
+<ol>
+<li>panner
+<li>panner butter masala
+<li>panner fry
+<li>panner briyani
+<li>tikka panner masala
+</ol>
+<p><a href ="https://en.wikipedia.org/wiki/Paneer">paneer</a> </p>
+<p><a href ="https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/">panner butter masala</a> </p>
+<p><a <p><a href ="https://en.wikipedia.org/wiki/Paneer ">panner fry</a> </p>
+<p><a href ="https://www.indianhealthyrecipes.com/paneer-biryani/"> panner briyani</a> </p>
+<p><a href ="https://www.indianhealthyrecipes.com/paneer-biryani/">tikka panner masala </a> </p>
+<ul>
+<li>mutton
+<li>mutton gravy
+<li>mutton briyani
+<li>mutton roll
+<li>mutton fry
+</ul>
+<ol>
+<li>mutton
+<li>mutton gravy
+<li>mutton briyani
+<li>mutton roll
+<li>mutton fry
+</ol>
+<p><a href ="https://www.licious.in/red-meat">mutton </a> </p>
+<p><a href ="https://en.wikipedia.org/wiki">mutton gravy </a> </p>
+<p><a href ="https://en.wikipedia.org/wiki/Biryani">mutton briyani</a> </p>
+<p><a href="https://en.wikipedia.org/wiki/">mutton roll </a> </p>
+<p><a href ="https://en.wikipedia.org/wiki/Lamb_and_mutton">mutton fry </a> </p>
+<ul>
+<li>egg omlet
+<li>egg briyani
+<li>egg fired rice
+<li>egg  roll
+<li>egg masala
+</ul>
+<ol>
+<li>egg omlet
+<li>egg briyani
+<li>egg fired rice
+<li>egg  roll
+<li>egg masala
+<li>egg curry
+</ol>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=egg+omlet+&title=Special%3ASearch&ns0=1">egg omlet </a> </p>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=egg+briyani&title=Special%3ASearch&ns0=1">egg briyani </a> </p>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=egg+fired+rice&title=Special%3ASearch&ns0=1"</a>egg fired rice </p>
+<p><a href ="https://en.wikipedia.org/wiki/Egg_roll">egg roll </a> </p>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=egg+masala&title=Special%3ASearch&ns0=1">egg masala</a> </p>
+<p><a href ="https://en.wikipedia.org/wiki/List_of_egg_dishes">egg curry</a> </p>
+<ul>
+<li>fish
+<li>fish curry
+<li>fish fry
+<li>fish briyani
+<li>fish masala
+<li>bone less fish
+</ul>
+<ol>
+<li>fish
+<li>fish curry
+<li>fish fry
+<li>fish briyani
+<li>fish masala
+<li>bone less fish
+</ol>
+<p><a href ="https://en.wikipedia.org/wiki/Fish">fish </a> </p>
+<p><a href ="https://en.wikipedia.org/wiki/Fish_curry">fish curry </a> </p>
+<p><a href ="https://en.wikipedia.org/wiki/Fish_fry">fish fry </a> </p>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=fish+briyani&title=Special%3ASearch&ns0=1">fish briyani </a> </p>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=fish+masala&title=Special%3ASearch&ns0=1">fish masala </a> </p>
+<p><a href ="https://en.wikipedia.org/w/index.php?search=bone+less+fish&title=Special%3ASearch&ns0=1">bone less fish</a> </p>
+
+<h2> Table </h2>
+<table>
+<tr>
+<th>SI No</th>
+<th>Name</th>
+<th>Emp_Id</th>
+<th>Address</th>
+</tr>
+<tr>
+<td>1</td>
+<td>kavya</td>
+<td>158</td>
+<td>Andhra pradesh</td
+</tr>
+<tr>
+<td>2</td>
+<td>Satya</td>
+<td>191</td>
+<td>Telangana</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Navya</td>
+<td>148</td>
+<td>Nellore</td
+</tr>
+<tr>
+<td>4</td>
+<td>Sneha</td>
+<td>123</td>
+<td>Tamil</td
+</tr>
+
+</head>
+</html>
+</style>
+<body style="background-color:cyan">
+
+<p> I am going to Add <b> characters in the sentence </p>
+<h1>Hello!I am talkative</h2>
+<p> interactive </p>
+<h1>Hello!I love to watch movies</h3>
+<p> horror movies </p>
+<h1>Hello!I am a good girl</h4>
+<p> describig </p>
+<h1>Hello!I listen music</h5>
+<p> romantic </p>
+<h1>Hello!I am okay</h6>
+<p> regards </p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+</head>
+    
+    <p>name is zoho corporation</p>
+
+    <marquee width:50% scrollamount="25">Hello I am srolling line</marquee>
+
+    <form>
+<label for="fname">FIRSTNAME</label><br>
+<input type="text" id = "fname" name = "fname" value ="jalapati kavya"><br>
+<label for="fname">MIDDLENAME</label><br>
+<input type="text" id = "fname" name = "fname" value ="sree" ><br>
+<label for="fname">LASTNAME</label><br>
+<input type="text" id = "fname" name = "fname" value ="kalyani" ><br>
+<label for="fname">Email</label><br>
+<input type="text" id = "fname" name = "fname" value ="ja7915@srmist.edu.in" ><br>
+<label for="fname">phone no</label><br>
+<input type="text" id = "fname" name = "fname" value ="9150468856"><br>
+<label for="fname">DOB</label><br>
+<input type="text" id = "fname" name = "fname" value ="22-02-2002"><br>
+<label for="fname">submit</label><br>
+<input type="text" id = "fname" name = "fname" value ="submit" >
+
