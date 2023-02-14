@@ -1,0 +1,51 @@
+<html>
+<body background="https://apexapps.oracle.com/pls/apex/r/dbpm/133/files/static/v420/test-background.png">
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body> 
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</center> 
+</form>
+<br>
+<br>
+<br>
+<br>
+ <br>
+
+        
+        <marquee behavior="alternate" direction="left" scrollamount ="15">
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/02/FotoJetcoverindianrest.jpg" width="300" height="200" alt="Natural" /> 
+            <img src="https://imgmedia.lbb.in/media/2019/07/5d242ad8e93a896e5542da0d_1562651352251.jpg" width="300" height="200" alt="Natural" />
+            <img src="https://c.ndtvimg.com/2022-09/1jsu8038_noodles_625x300_28_September_22.jpg?im=FaceCrop,algorithm=dnn" width="300" height="200" alt="Natural" />
+          </marquee>
+
+</body>
+</html>
