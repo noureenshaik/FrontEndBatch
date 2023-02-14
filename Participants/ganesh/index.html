@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous"
+        />
+</head>
+<body background="pexels-emre-can-acer-2079438.jpg" class=" flex justify-content-center align-items-center"> 
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }  
+        }  
+        </script> 
+
+        <div class="A1">
+            <h2 class="text-center text-light" >LOGIN</h2>
+          </div>
+
+        <form class="container bg-light rounded mt-5 py-2"  name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()"> 
+            <div class="mb-3">
+              <label class="form-label">NAME</label>
+              <input type="text" name="name" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">PASSWORD</label>
+              <input type="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+</body>
+</body>
+</html>
