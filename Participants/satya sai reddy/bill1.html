@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order</title>
+    <style>
+   
+   h1{
+        
+        margin-right:400px;
+        margin-left:400px;
+        text-align: center;
+        background-color:aliceblue;
+        box-shadow: 5px 5px;
+        text-decoration-color: aliceblue;
+        
+    
+    }
+        .form1{
+            font-style: italic;
+            margin-top: 10px;
+            margin-right:200px;
+            margin-left:800px;
+            border-radius: 20px;
+            color: rgb(238, 238, 238);
+            /* box-shadow: 10%; */
+            box-shadow: 20px ;
+            border:2px solid whitesmoke;
+            background-color: rgb(73, 73, 73);
+            opacity: 0.5;
+        }
+        video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background-size: cover;
+        }
+    </style>
+  </head>
+ 
+  </head>
+    <body>
+        <video id="background-video" loop muted autoplay>
+            <source src="indian.mp4" type="video/mp4">
+          </video>
+        <h1 style="color: aliceblue;  background-color:transparent;">Take your Order for Indian foods</h1>
+        <div class="form1">
+        <form>
+          <label for="numBurgers">Number of meals:</label>
+          <input type="number" id="numBurgers" name="numBurgers" value="0" min="0">
+          <br><br>
+          <label for="numFries">Number of veg biriyani:</label>
+          <input type="number" id="numFries" name="numFries" value="0" min="0">
+          <br><br>
+          <label for="numDrinks">Number of chapaties:</label>
+          <input type="number" id="numDrinks" name="numDrinks" value="0" min="0">
+          <br><br>
+          <label for="numBurgers">Number of indian thali:</label>
+          <input type="number" id="numBurger" name="numBurger" value="0" min="0">
+          <br><br>
+          <label for="numFries">Number of Rasagula fry:</label>
+          <input type="number" id="numFrie" name="numFrie" value="0" min="0">
+          <br><br>
+          <label for="numDrinks">Number of Drumstick Fry:</label>
+          <input type="number" id="numDrink" name="numDrink" value="0" min="0">
+          <br><br>
+          <button type="button" onclick="calculateBill()">Order</button>
+        </form>
+        <p id="output"></p>
+       
+
+        <br><br>
+    </div>
+        
+        <script src="script.js"></script>
+        <script>
+            function calculateBill() {
+            const numBurgers = parseInt(document.querySelector("#numBurgers").value);
+            const numFries = parseInt(document.querySelector("#numFries").value);
+            const numDrinks = parseInt(document.querySelector("#numDrinks").value);
+            const numBurger = parseInt(document.querySelector("#numBurger").value);
+            const numFrie = parseInt(document.querySelector("#numFrie").value);
+            const numDrink = parseInt(document.querySelector("#numDrink").value);
+            const burgerPrice = 120;
+            const friesPrice = 150;
+            const drinkPrice = 210;
+            const burgerPric = 310;
+            const friesPric = 210;
+            const drinkPric = 100;
+            const total = (numBurgers * burgerPrice) + (numFries * friesPrice) + (numDrinks * drinkPrice)+(numBurger * burgerPric) + (numFrie * friesPric) + (numDrink * drinkPric);
+            document.querySelector("#output").innerHTML = "Your Total order is:"+" ₹"+total;
+            if(total==0){
+                alert("The colums cannot be empty")
+            }else{
+                alert("Your order is succesfull")
+            }
+                
+            
+            }
+        </script>
+  </body>
+</html>
