@@ -1,0 +1,186 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: aqua;
+    background-image: url('bgr1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+
+}
+form btn2{
+    margin:300px 20px 10px
+
+}
+
+
+.btn{
+    width: 250px;
+    position: absolute;
+    margin: 580px 10px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    font-family: system-ui;
+}
+.btn:hover{
+    color:green;
+    background:rgb(23, 172, 209);
+
+}
+.btn1{
+    width: 250px;
+    position: absolute;
+    margin: 580px 310px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    font-family: system-ui;
+}
+.btn1:hover{
+    color:green;
+    background:rgb(23, 172, 209);
+
+}
+.btn2{
+    width: 250px;
+    position: absolute;
+    margin: 580px 610px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    font-family: system-ui;
+}
+.btn2:hover{
+    color:green;
+    background:rgb(23, 172, 209);
+
+}
+
+.content {
+  
+    width: 30%;
+    position: absolute;
+    margin: 300px 20px 50px 10px;
+    box-sizing: border-box;
+    height: 250px;
+    width: 250px;
+    
+}
+.content:hover{
+    box-shadow: #fff;
+    border:2px white;
+}
+.content img{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+.logo {
+    line-height: 10px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+#i1{
+    position: absolute;
+    margin: 300px;
+}
+#i2{
+    position: absolute;
+    margin: 300px 600px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background:#ADD8E6;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background:lightblue;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+@media(max-width: 1000px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top:3px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background:lightblue;
+          color: red;
+    }
+
+    .showing {
+          max-height: 50em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding:10px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}

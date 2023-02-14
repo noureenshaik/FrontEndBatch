@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>kings</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+   <style>
+      body{
+         background-image: url(w1.jfif);
+      }
+   </style>
+</head>
+<body>
+   <div class="=p">
+   <div class="wrapper">
+         <nav>
+            <div class="menu-icon">
+               <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+               <div class="res_name"><img src="logo.png" width="100px" height="100px"/>KING'S RESTAURANT</div>
+            </div>
+            <div class="menu">
+               <ul>
+                  <li><a href="#"><i class="fa fa-home" style="font-size:48px;color:red"></i>Home</a></li>
+                  <li><a href="geoloc.html"><i class="fa fa-map-marker" aria-hidden="true" style="color:red;font-size:30px"></i>Locations</a></li>
+                  <li><a href="calculator.html"><i class="fa fa-calculator" aria-hidden="true" style="color:red"></i>Calculator</a></li>
+                  <li><a href="signup.html"><i class="fa fa-address-book" style="font-size:48px;color:red"></i>Sign up</a></li>
+                  <li><a href="login.html"><i class="gg-log-out"></i>login</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <div class="content" >
+          <img src="bg.jpg" width="250px" height="250px"/>
+      </div>
+      <button type="submit" onclick="f1()" width="20px" height="20px" class="btn">INDIAN CUISINE</button>
+      <img src="ita.jpeg" width="250px" height="250px" id="i1"/>
+    
+     <button type="submit" onclick="f2()" width="20px" height="20px" class="btn1">ITALIAN CUISINE</button>
+   
+      <img src="chin.jfif" width="250px" height="250px" id="i2"/>
+  <button type="submit" onclick="f3()" width="20px" height="20px" class="btn2">INDIAN CUISINE</button>
+   <script>
+       $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('lightgreen');
+            }
+
+            else {
+                  $('nav').removeClass('');
+            }
+      })
+      function f1(){
+         location.replace("indian.html");
+      }
+      function f2(){
+         location.replace("italian.html");
+      }
+      function f3(){
+         location.replace("chinese.html");
+      }
+   </script>
+</div>
+<footer>
+   <img src="bg.jpg" width="100px" height="100px"/>
+</footer>
+
+</body>
+
+</html>
